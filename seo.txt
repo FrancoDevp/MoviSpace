@@ -1,0 +1,12 @@
+Hola, agregue las metas necesarias para el seo de la pagina, encabezado y titulos ya tenia, mayor parte de la pagina tenia, y cada pagina tiene su contenido diferente.
+
+ADD: 
+ <meta description="description" content="MoviSpace es una compania de telecomunicaciones a nivel global, ofrenciento paquetes de internet y llamadas.">
+
+  <meta name="keywords"  content="planes mobiles, internet, llamadas, mensajes, roaming, gigas">
+
+con respecto al 404 error, se lo agregue a al <H5> de mi nav de INICIO.
+
+TITLES: Modifique el titulo de mi pagina de iniciar sesion, en el h1 y en title fueron modificados.
+
+Organice unas de las paginas de la jerarquia, cree pages>planes-mobiles>mobiles.

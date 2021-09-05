@@ -1,0 +1,63 @@
+/* PAGINA PRODUCTOS */
+.card-title {
+    border: 1px solid aquamarine;
+    background-color: aquamarine;
+    border-radius: 100px;
+}
+
+.card {
+    box-shadow: 0px 0px 20px grey;
+    margin-bottom: 150px;
+    font-size: 20px;
+    overflow-y: scroll;
+}
+
+.mainHover {
+    height: 400px;
+    width:350px;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.mainHover:hover {
+    height:550px;
+    width: 450px;
+    padding: 30px 10px;
+    font-size: 25px;
+}
+
+
+.card_fuente {
+    font-size: 20px;
+}
+
+.planes_margin {
+    margin-top: 150px;
+}
+
+img {
+    height:50px;
+    width:50px;
+}
+
+.container-footer {
+    margin: 0px;
+    padding: 30px;
+    background-color: #F8F9FA;
+}
+
+.footer_parrafo {
+    font-size: 16px;
+}
+
+.ul-1 {
+    font-size: 16px;
+    padding: 4px;
+}
+
+li {
+    padding:3px;
+}
+
+
+

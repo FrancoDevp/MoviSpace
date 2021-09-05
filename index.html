@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta description="description" content="MoviSpace es una compania de telecomunicaciones a nivel global, ofrenciento paquetes de internet y llamadas.">
+  <meta name="keywords"  content="planes mobiles, internet, llamadas, mensajes, roaming, gigas">
+  <link rel="icon" type="image/png" href="/assets/img/movispace.icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>MoviSpace</title>
+</head>
+<body>
+  <div class="container">
+    <!-- NAV -->
+    <div class="row">
+      <div class="col-lg-12 col-xs-12">
+        <nav class="navbar navbar-light nav_color fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MoviSpace</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title h2" id="offcanvasNavbarLabel"><a href="./pages/404.html">Inicio</a></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/planes-mobiles/mobiles.html">Planes Moviles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/productos-2.html">Planes Corporativos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/iniciar-sesion.html">Login</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- carousel -->
+    <div class="row">
+      <div class="col-lg-12 col-xs-12 main_carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/movispace3.jpg" class="d-block w-100" alt="Planes de celulares">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/movispace1.jpg" class="d-block w-100" alt="celular de samsung">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/movispace2.jpg" class="d-block w-100" alt="promocion">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- CARD -->
+    <div class="row">
+      <div class="col-lg-12 col-xs-12 main_card">
+        <div class="row d-flex justify-content-evenly contenidoCards">
+          <div class="col-lg-3 col-xs-12 d-flex justify-content-center p-3">
+            <div class="card main__info_card" style="width: 22rem;">
+              <img src="./assets/img/card1plan.jpg" class="card-img-top main_java java_boxmodel" alt="redes sociales">
+              <div class="card-body">
+                <p class="card-text">Para tener disponible el beneficio de Gigas Gratis para Redes Sociales, tenés que ser cliente prepago y elegir alguna de las promociones disponibles: Packs de Internet, Packs Combinados, Armá tu Pack o Multiplicate.
+                  Las aplicaciones contempladas para utilizar los Gigas Gratis son: Facebook, Facebook Messenger, Instagram, Twitter, Snapchat, TikTok y Spotify.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-xs-12 d-flex justify-content-center p-3">
+            <div class="card main__info_card" style="width: 22rem;">
+              <img src="./assets/img/card2plan.jpg" class="card-img-top main__angular angular--boxmodel"
+                alt="Reporte de tarifas de planes">
+              <div class="card-body">
+                <p class="card-text"> En Argentina no hay muchas opciones a la hora de elegir entre operadoras de telefonía celular o telefonía móvil, las principales operadoras son Claro, Personal, Movistar y Tuenti. Pueden consultar los planes de Claro, Personal,  Movistar  y Tuenti en ofertas de Internet, sms, llamadas, WhatsApp, roaming y Música y Vídeo y en 3G y 4G para clientes prepagos y postpagos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-xs-12 d-flex justify-content-center p-3">
+            <div class="card main__info_card" style="width: 22rem;">
+              <img src="./assets/img/card3plan.jpg" class="card-img-top main_react react--boxmodel" alt="5g">
+              <div class="card-body">
+                <p class="card-text">las redes móviles 5G que utilizan tecnología de quinta generación, las cuales son capaces de conectar varios dispositivos inalámbricos a la vez para brindarles acceso a servicios de Internet y telefonía con características de velocidad y latencia muy superiores a las que utilizan las generaciones anteriores.
+                  <br>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-xs-12 main_card">
+        <!-- CARD -->
+        <div class="card">
+          <div class="card-header">
+            Promociones Primavera
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Planes de todo tipo.</h5>
+            <p class="card-text">¡Aprovechá esta promoción sin cambiar tu número!
+              Envianos tu mail</p>
+            <form action="#">
+              <label for="E-mail">E-mail:</label>
+              <input type="text" id="E-mail" name="E-mail">
+              <input type="submit" value="enviar">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-xs-12 ">
+        <div class="card bg-dark text-black card_equipo border-1" style="width: 70%">
+          <img src="./assets/img/oferta-equipo-1.jpg" class="card-img" alt="venta de celulares">
+          <div class="card-img-overlay">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid container-footer">
+    <div class="row">
+      <div class="col-lg-12 col-xs-12">
+        <!-- FOOTER -->
+        <footer class=" footer__info">
+          <div class="row footer__links links__font">
+            <div class="col-lg-3 col-xs-12">
+              <h4 class="h1">Movispace</h4>
+              <p class="footer_parrafo">Defensa de las y los Consumidores. Para reclamos ingrese aquí<br>
+                Reglamento de cliente servicios TICLey 24240Prestación Básica Universal | Enacom
+                contacto@enacom.gob.arContrato de adhesiónPolítica de Privacidad de Telecom Argentina S.A.Suspensión de
+                los Plazos de GarantíasArrepentimiento</p>
+            </div>
+            <div class="col-lg-3 col-xs-12">
+              <ul class="ul-1">
+                <h4><a href="#" class="h2">Equipos celulares</a></h4>
+                <li><a href="#">Samsung</a></li>
+                <li><a href="#">Iphone</a></li>
+                <li><a href="#">Xiaomi</a></li>
+                <li><a href="#">Motorola</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12">
+              <ul class="ul-1">
+                <h4><a href="#" class="h2">Ayuda</a></h4>
+                <li><a href="#">Companía</a></li>
+                <li><a href="#">Inversores</a></li>
+                <li><a href="#">RRHH</a></li>
+                <li><a href="#">Accesibilidad</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12">
+              <ul class="ul-1">
+                <h4><a href="#" class="h2">Móvil</a></h4>
+                <li><a href="#">Portabilidad</a></li>
+                <li><a href="#">Roaming</a></li>
+                <li><a href="#">Packs de Internet</a></li>
+                <li><a href="#">Prepago</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <!-- finde footer -->
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="js/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
