@@ -52,6 +52,7 @@ a {
 .container-footer {
   margin: 30px 0px 0px 0px;
   padding: 30px;
+  box-shadow: 0px 1px 3px grey;
 }
 
 .footer_parrafo {
