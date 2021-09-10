@@ -3,6 +3,7 @@ body {
 }
 
 /*----- MOVISPACE PAGINA PRINCIPAL------ */
+
 .main_carousel {
   margin-top: 100px;
 }
@@ -71,7 +72,7 @@ a:hover {color:rgb(48, 138, 138)}
 
 /* ----------- PAGINA CONTACTO ------ */
 .formulario {
-  margin:7% 20%;
+  margin:7% 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,26 +81,20 @@ a:hover {color:rgb(48, 138, 138)}
   border-radius: 50px;
   box-shadow: 0px 0px 10px 1px grey;
   background-image: linear-gradient(306deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%,rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%,rgba(255, 255, 255, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 99.999%),linear-gradient(353deg, rgba(81, 81, 81, 0.05) 0%, rgba(81, 81, 81, 0.05) 33.333%,rgba(238, 238, 238, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 66.666%,rgba(32, 32, 32, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 99.999%),linear-gradient(140deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 33.333%,rgba(109, 109, 109, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 66.666%,rgba(30, 30, 30, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 99.999%),linear-gradient(189deg, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 33.333%,rgba(55, 55, 55, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 66.666%,rgba(145, 145, 145, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 99.999%),linear-gradient(90deg, rgb(9, 201, 186),rgb(18, 131, 221));
-  font-size: 23px;
+  font-size: 25px;
 }
 .redesSociales {
-  /* margin-bottom: 50px; */
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
   display: inline-block;
   padding:0px;
-  /* background-image: linear-gradient(white,aqua); */
 }
 
 .noti {
   margin: 0px 10px;
 }
 
-label {
-  font-size:100%;
-  padding: 1% 0%;
-}
 
 .container_footer_contacto {
     margin: 0px 0px 0px 0px;
@@ -131,7 +126,6 @@ label {
   box-shadow: 0px 0px 10px 1px grey;
   display:inline-block;
   margin: 0.1vw 20vh;
-  /* margin: 0.1% 10%; */
 }
 
 .titleNosotros {
@@ -231,7 +225,6 @@ body {
   font-size: 30px;
   font-family: monospace;
   margin: 40px 0px;
-  /* background-image: linear-gradient(white, aqua, white); */
   display: inline-block;
   padding: 0px 5px;
   border-radius: 50px;
@@ -254,14 +247,3 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-
-/* @keyframes fran {
-    0% {height: 700px;}
-}
-    .fran:hover {
-        height: 900px;
-        animation-name: fran;
-        animation-duration: 1s;
-        animation-delay: 0s;
-        animation-timing-function: ease-in;
-    } */
