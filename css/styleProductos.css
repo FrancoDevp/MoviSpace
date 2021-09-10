@@ -78,7 +78,7 @@ li {
         .card {
             box-shadow: 0px 0px 20px grey;
             margin-bottom: 100px;
-            overflow: hidden;
+            overflow: scroll;
         }
         
         .mainHover {
