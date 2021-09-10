@@ -9,7 +9,6 @@
     box-shadow: 0px 0px 20px grey;
     margin-bottom: 150px;
     font-size: 20px;
-    overflow-y: scroll;
 }
 
 .mainHover {
@@ -59,5 +58,70 @@ li {
     padding:3px;
 }
 
+@media only screen and (max-width: 768px) {
 
+        .card-title {
+        margin: auto;
+        font-size: 25px;
+        border: 1px solid aquamarine;
+        background-color: aquamarine;
+        border-radius: 100px;
+         }
+        
+        p {
+            margin: 0px 0px;
+            padding: 0px 0px;
+            font-size:14px;
+            text-align: start;
+        }
+
+        .card {
+            box-shadow: 0px 0px 20px grey;
+            margin-bottom: 100px;
+            overflow: hidden;
+        }
+        
+        .mainHover {
+            height: 400px;
+            width:350px;
+            font-size: 25px;
+            transition: all 0.5s;
+        }
+        
+        .mainHover:hover {
+            height:450px;
+            width: 450px;
+            padding: 10px 10px;
+            font-size: 25px;
+        }
+        
+        
+        .planes_margin {
+            margin-top: 100px;
+        }
+        
+        img {
+            height:50px;
+            width:50px;
+        }
+        
+        .container-footer {
+            margin: 0px;
+            padding: 30px;
+            background-color: #F8F9FA;
+        }
+        
+        .footer_parrafo {
+            font-size: 16px;
+        }
+        
+        .ul-1 {
+            font-size: 16px;
+            padding: 4px;
+        }
+        
+        li {
+            padding:3px;
+        }
+}
 
