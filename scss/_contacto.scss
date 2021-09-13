@@ -21,6 +21,13 @@
     justify-content: space-around;
     display: inline-block;
     padding:0px;
+
+    .img-redes {
+      transition: all 1s;
+    }
+    .img-redes:hover {
+      transform: translateY(10px);
+    }
   }
   
   .container_footer_contacto {
