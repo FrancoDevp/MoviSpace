@@ -1,0 +1,63 @@
+/* --------- PAGINA NOSOTROS ------- */
+
+.contenedor_nosotros {
+  margin-top: 10%;
+  margin-bottom: 15%;
+
+  .nosotros {
+    margin: 0.1vw 2vh;
+    padding: 25px 20px 25px 20px;
+    border: grov 1px grey;
+    box-shadow: 0px 0px 10px 1px grey;
+    display:inline-block;
+  
+    .titleNosotros {
+      padding: 20px 0px;
+      text-align: center;
+      font-size: 4rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .parrafoNosotros {
+      font-size: 2rem;
+      word-spacing: 5px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    }
+  }
+}
+
+.nosotros_footer {
+  background-color:#F8F9FA;
+}
+  
+  /* mobile nosotros */
+  
+  @media only screen and (max-width: 768px) {
+  
+    .contenedor_nosostros {
+      margin: 20% 0%;
+    }
+    
+    .nosotros {
+      padding: 25px 20px 25px 20px;
+      border: grov 1px grey;
+      box-shadow: 0px 0px 10px 1px grey;
+      display:inline-block;
+      margin: 0.1vw 20vh;
+    }
+    
+    .titleNosotros {
+      padding: 5px 0px;
+      text-align: center;
+      font-size: 2rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .parrafoNosotros {
+      font-size: 1rem;
+      word-spacing: 4px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    }
+  
+  }
+  
+  /* fin mobile nosotros */

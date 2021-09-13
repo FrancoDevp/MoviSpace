@@ -1,0 +1,71 @@
+$negro:black;
+
+body {
+    background-image: radial-gradient(circle at 13% 47%, rgba(72,255,255, 0.27) 0%, rgba(72,255,255, 0.27) 25%,transparent 25%, transparent 100%),radial-gradient(circle at 28% 63%, rgba(235,9,9, 0.09) 0%, rgba(235,9,9, 0.09) 16%,transparent 16%, transparent 100%),radial-gradient(circle at 81% 56%, rgba(243,19,243, 0.17) 0%, rgba(243,19,243, 0.17) 12%,transparent 12%, transparent 100%),radial-gradient(circle at 26% 48%, rgba(190,192,38, 0.42) 0%, rgba(190,192,38, 0.42) 6%,transparent 6%, transparent 100%),radial-gradient(circle at 97% 17%, rgba(72,255,255, 0.27058823529411763) 0%, rgba(72,255,255, 0.27058823529411763) 56%,transparent 56%, transparent 100%),radial-gradient(circle at 50% 100%, rgba(83,154,194, 0.16) 0%, rgba(83,154,194, 0.16) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 55% 52%, rgba(69, 69, 69,0.03) 0%, rgba(69, 69, 69,0.03) 6%,transparent 6%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+        .navbar-brand {
+        font-size: 25px;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        padding: 0px 40px;
+    }
+    .main_carousel {
+        margin-top:100px;
+    }
+    .main_card {
+        margin-top: 80px;
+        margin-bottom: 10px;
+        color:black;
+
+        .main__info_card {
+            color: $negro;
+        }
+        .card_equipo {
+            margin: 30px 100px;
+        }
+        .border-1 {
+            box-shadow: 0px 0px 5px black;
+        }
+    }
+    .container-footer {
+        margin: 30px 0px 0px 0px;
+        padding: 30px;
+        box-shadow: 0px 1px 3px grey;
+        .footer_parrafo {
+            font-size: 16px;
+            }
+        
+        li {
+            list-style-type: none;
+            }
+        a {
+            text-decoration: none;
+            color: $negro;
+        }
+        .ul-1 {
+            font-size: 16px;
+            padding: 4px;
+        }
+        li {
+            padding: 3px;
+        }
+        a:hover {
+            color:rgb(48, 138, 138)
+        }
+        .nav-link:hover {color:rgb(48, 138, 138)
+        }
+    }
+} 
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
