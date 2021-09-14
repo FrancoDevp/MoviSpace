@@ -7,8 +7,8 @@ body {
   body .main_carousel {
     margin-top: 100px; }
   body .main_card {
-    margin-top: 80px;
-    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     color: black; }
     body .main_card .main__info_card {
       color: black; }
@@ -39,16 +39,16 @@ body {
 
 /* PAGINA PRODUCTOS */
 .card_margin {
-  margin-top: 100px; }
+  margin-top: 100px;
+  margin-left: 10%; }
   .card_margin .card {
     margin: 50px 10px 10px 10px;
     background-color: white;
     box-shadow: 0px 0px 20px grey;
     font-size: 18px; }
     .card_margin .card .mainHover {
-      margin-top: 100px;
       height: 150px;
-      width: 300px;
+      width: 200px;
       transition: all 0.5s;
       opacity: 100%; }
     .card_margin .card .mainHover:hover {
@@ -74,7 +74,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .card_margin {
-    margin: 5% 0% 0% 20%; }
+    margin: 5% 0% 0% 15%; }
   .card-title {
     margin: auto;
     font-size: 25px;
@@ -86,6 +86,8 @@ body {
     padding: 5px 0px;
     text-align: start;
     font-size: 15px; }
+  .planes_margin {
+    margin-top: 100px; }
   .card {
     box-shadow: 0px 0px 20px grey;
     margin-bottom: 100px; }
@@ -96,8 +98,6 @@ body {
   .mainHover:hover {
     height: 95%;
     width: 90%; }
-  .planes_margin {
-    margin-top: 100px; }
   .container-footer {
     margin: 0px;
     padding: 30px;
