@@ -38,37 +38,43 @@ body {
       color: #308a8a; }
 
 /* PAGINA PRODUCTOS */
-.planes_margin {
+.card_margin {
   margin-top: 100px; }
-  .planes_margin .card {
+  .card_margin .card {
+    margin: 50px 10px 10px 10px;
+    background-color: white;
     box-shadow: 0px 0px 20px grey;
-    margin-bottom: 150px;
-    height: 400px;
-    width: 350px;
-    font-size: 18px;
-    transition: all 0.5s; }
-    .planes_margin .card .title-planes {
+    font-size: 18px; }
+    .card_margin .card .mainHover {
+      margin-top: 100px;
+      height: 150px;
+      width: 300px;
+      transition: all 0.5s;
+      opacity: 100%; }
+    .card_margin .card .mainHover:hover {
+      height: 150px;
+      width: 350px;
+      padding: 30px 10px;
+      font-size: 25px; }
+    .card_margin .card .title-planes {
       border: 1px solid aquamarine;
       background-color: aquamarine;
       border-radius: 100px; }
-  .planes_margin .card:hover {
-    height: 550px;
-    width: 450px;
-    padding: 30px 10px;
-    font-size: 25px; }
-  .planes_margin .container-footer {
-    margin: 0px;
-    padding: 30px;
-    background-color: #F8F9FA; }
-    .planes_margin .container-footer .footer_parrafo {
-      font-size: 16px; }
-    .planes_margin .container-footer .ul-1 {
-      font-size: 16px;
-      padding: 4px; }
-    .planes_margin .container-footer li {
-      padding: 3px; }
+
+.container-footer {
+  padding: 30px;
+  background-color: #F8F9FA; }
+  .container-footer .footer_parrafo {
+    font-size: 16px; }
+  .container-footer .ul-1 {
+    font-size: 16px;
+    padding: 4px; }
+  .container-footer li {
+    padding: 3px; }
 
 @media only screen and (max-width: 768px) {
+  .card_margin {
+    margin: 5% 0% 0% 20%; }
   .card-title {
     margin: auto;
     font-size: 25px;
@@ -77,22 +83,19 @@ body {
     border-radius: 100px; }
   p {
     margin: 0px 0px;
-    padding: 0px 0px;
-    font-size: 14px;
-    text-align: start; }
+    padding: 5px 0px;
+    text-align: start;
+    font-size: 15px; }
   .card {
     box-shadow: 0px 0px 20px grey;
-    margin-bottom: 100px;
-    overflow: scroll;
-    height: 400px;
-    width: 350px;
-    font-size: 25px;
+    margin-bottom: 100px; }
+  .mainHover {
+    height: 90%;
+    width: 75%;
     transition: all 0.5s; }
-  .card:hover {
-    height: 450px;
-    width: 450px;
-    padding: 10px 10px;
-    font-size: 25px; }
+  .mainHover:hover {
+    height: 95%;
+    width: 90%; }
   .planes_margin {
     margin-top: 100px; }
   .container-footer {

@@ -1,14 +1,27 @@
 /* PAGINA PRODUCTOS */
-
-.planes_margin {
-    margin-top: 100px;
-    .card {
+.card_margin {
+    margin-top:100px;
+    
+        .card {
+        margin: 50px 10px 10px 10px;
+        background-color: white;
         box-shadow: 0px 0px 20px grey;
-        margin-bottom: 150px;
-        height: 400px;
-        width:350px;
         font-size: 18px;
-        transition: all 0.5s;
+
+        .mainHover {
+            margin-top:100px;
+            height: 150px;
+            width:300px;
+            transition: all 0.5s;
+            opacity: 100%;
+        }
+
+        .mainHover:hover {
+            height:150px;
+            width: 350px;
+            padding: 30px 10px;
+            font-size: 25px;
+        }
 
         .title-planes {
             border: 1px solid aquamarine;
@@ -16,15 +29,8 @@
             border-radius: 100px;
         }
     }
-    .card:hover {
-        height:550px;
-        width: 450px;
-        padding: 30px 10px;
-        font-size: 25px;
-    }
-
+}     
     .container-footer {
-        margin: 0px;
         padding: 30px;
         background-color: #F8F9FA;
     
@@ -41,9 +47,14 @@
             padding:3px;
         }
     }   
-}
+
 
 @media only screen and (max-width: 768px) {
+
+        .card_margin {
+            margin: 5% 0% 0% 20%;
+        }
+
         .card-title {
         margin: auto;
         font-size: 25px;
@@ -54,28 +65,30 @@
         
         p {
             margin: 0px 0px;
-            padding: 0px 0px;
-            font-size:14px;
+            padding: 5px 0px;
             text-align: start;
+            font-size:15px;
         }
+        
+        
 
         .card {
             box-shadow: 0px 0px 20px grey;
             margin-bottom: 100px;
-            overflow: scroll;
-            height: 400px;
-            width:350px;
-            font-size: 25px;
+            
+        }
+        
+        .mainHover {
+            height:90%;
+            width:75%;
             transition: all 0.5s;
+            
         }
-        
-        .card:hover {
-            height:450px;
-            width: 450px;
-            padding: 10px 10px;
-            font-size: 25px;
+    
+        .mainHover:hover {
+            height:95%;
+            width:90%;
         }
-        
         
         .planes_margin {
             margin-top: 100px;
