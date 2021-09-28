@@ -59,6 +59,10 @@ body {
       border: 1px solid aquamarine;
       background-color: aquamarine;
       border-radius: 100px; }
+    .card_margin .card .title-pag-2 {
+      border: 1px solid aquamarine;
+      background-color: rgba(75, 202, 160, 0.741);
+      border-radius: 100px; }
 
 .container-footer {
   padding: 30px;
@@ -67,9 +71,9 @@ body {
     font-size: 16px; }
   .container-footer .ul-1 {
     font-size: 16px;
-    padding: 4px; }
+    padding: 4px 100px; }
   .container-footer li {
-    padding: 3px; }
+    padding: 10px; }
 
 @media only screen and (max-width: 768px) {
   .card_margin {
