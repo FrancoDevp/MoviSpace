@@ -61,7 +61,7 @@ body {
       border-radius: 100px; }
     .card_margin .card .title-pag-2 {
       border: 1px solid aquamarine;
-      background-color: rgba(75, 202, 160, 0.741);
+      background-color: mediumaquamarine;
       border-radius: 100px; }
 
 .container-footer {
@@ -71,9 +71,9 @@ body {
     font-size: 16px; }
   .container-footer .ul-1 {
     font-size: 16px;
-    padding: 4px 100px; }
+    padding: 4px; }
   .container-footer li {
-    padding: 10px; }
+    padding: 3px; }
 
 @media only screen and (max-width: 768px) {
   .card_margin {
@@ -84,6 +84,9 @@ body {
     border: 1px solid aquamarine;
     background-color: aquamarine;
     border-radius: 100px; }
+  img {
+    height: 50px;
+    width: 50px; }
   p {
     margin: 0px 0px;
     padding: 5px 0px;
@@ -103,7 +106,7 @@ body {
     width: 90%; }
   .container-footer {
     margin: 0px;
-    padding: 30px;
+    padding: 0px;
     background-color: #F8F9FA; }
   .footer_parrafo {
     font-size: 16px; }
