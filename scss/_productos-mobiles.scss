@@ -1,7 +1,6 @@
 /* PAGINA PRODUCTOS */
 .card_margin {
-    margin-top:100px;
-    margin-left: 10%;
+    margin:100px 0px 80px 0px;
     
         .card {
         margin:50px 50px 50px 10px;
@@ -9,25 +8,17 @@
         box-shadow: 0px 0px 20px grey;
         font-size: 18px;
 
-        .mainHover {
-            height:450px;
-            width:350px;
-            transition: all 0.5s;
-        }
-
-        .mainHover:hover {
-            height:150px;
-            width: 350px;
-            padding: 30px 10px;
-            font-size: 25px;
-        }
-
         .title-planes {
             border: 1px solid aquamarine;
             background-color: aquamarine;
             border-radius: 100px;
         }
         
+        .img {
+            height:50px;
+            width:50px;
+        }
+
         .title-pag-2 {
             border: 1px solid aquamarine;
             background-color: mediumaquamarine;
@@ -36,7 +27,6 @@
     }
 }     
     .container-footer {
-        padding: 30px;
         background-color: #F8F9FA;
     
         .footer_parrafo {
@@ -67,8 +57,8 @@
         background-color: aquamarine;
         border-radius: 100px;
          }
-         
-        img {
+
+        .img {
             height:50px;
             width:50px;
         }
