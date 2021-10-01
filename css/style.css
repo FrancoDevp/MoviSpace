@@ -16,25 +16,8 @@ body {
       margin: 30px 100px; }
     body .main_card .border-1 {
       box-shadow: 0px 0px 5px black; }
-  body .informacionImportante {
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 1px grey;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    list-style: none; }
-    body .informacionImportante .list ul li {
-      list-style: none;
-      font-size: 25px; }
-    body .informacionImportante .list ul li ul li {
-      font-size: 15px;
-      position: absolute;
-      background-color: black;
-      color: white;
-      padding: 2px;
-      display: none; }
-    body .informacionImportante .list ul li ul li h4:hover {
-      display: block; }
+  body .promoPorta {
+    background-color: #F9B208; }
   body .container-footer {
     margin: 30px 0px 0px 0px;
     padding: 30px;
@@ -63,7 +46,8 @@ body {
     margin: 50px 50px 50px 10px;
     background-color: white;
     box-shadow: 0px 0px 20px grey;
-    font-size: 18px; }
+    font-size: 18px;
+    transition: transform .5s; }
     .card_margin .card .title-planes {
       border: 1px solid aquamarine;
       background-color: aquamarine;
@@ -75,6 +59,8 @@ body {
       border: 1px solid aquamarine;
       background-color: mediumaquamarine;
       border-radius: 100px; }
+  .card_margin .card:hover {
+    transform: scale(1.2); }
 
 .container-footer {
   background-color: #F8F9FA; }
@@ -108,13 +94,6 @@ body {
   .card {
     box-shadow: 0px 0px 20px grey;
     margin-bottom: 100px; }
-  .mainHover {
-    height: 90%;
-    width: 75%;
-    transition: all 0.5s; }
-  .mainHover:hover {
-    height: 95%;
-    width: 90%; }
   .container-footer {
     margin: 0px;
     padding: 0px;
@@ -172,9 +151,9 @@ body {
   .contenedor_nosotros .nosotros {
     margin: 0.1vw 2vh;
     padding: 25px 20px 25px 20px;
-    border: grov 1px grey;
-    box-shadow: 0px 0px 10px 1px grey;
-    display: inline-block; }
+    border: 1px solid #CEFFFF;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8); }
     .contenedor_nosotros .nosotros .titleNosotros {
       padding: 20px 0px;
       text-align: center;
@@ -233,6 +212,8 @@ body {
       text-decoration: none; }
     .body_login .contenedor .login-1 {
       color: black; }
+    .body_login .contenedor .azul a:hover {
+      color: blue; }
     .body_login .contenedor .login-2 {
       color: black; }
     .body_login .contenedor .a-1 {

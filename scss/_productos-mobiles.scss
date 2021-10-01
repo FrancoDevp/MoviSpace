@@ -7,7 +7,8 @@
         background-color: white;
         box-shadow: 0px 0px 20px grey;
         font-size: 18px;
-
+        transition: transform .5s;  
+        
         .title-planes {
             border: 1px solid aquamarine;
             background-color: aquamarine;
@@ -25,6 +26,9 @@
             border-radius: 100px;
         }
     }
+        .card:hover {
+            transform:scale(1.2);
+        }
 }     
     .container-footer {
         background-color: #F8F9FA;
@@ -79,16 +83,6 @@
             margin-bottom: 100px;
         }
         
-        .mainHover {
-            height:90%;
-            width:75%;
-            transition: all 0.5s;
-        }
-    
-        .mainHover:hover {
-            height:95%;
-            width:90%;
-        }
         
         .container-footer {
             margin: 0px;
