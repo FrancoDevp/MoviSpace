@@ -1,5 +1,4 @@
 /* INICIAR SESION */
-
 .body_login {
     background-color: rgb(255, 255, 255);
     font-size: 20px;
@@ -11,7 +10,18 @@
   
     .contenedor {
       text-align: center;
-    
+
+      
+      .backIndex {
+        position: absolute;
+        left: 10px;
+        top: 1px;
+      }
+
+      .imgBack {
+        height: 75px;
+      }
+
       .title {
         color: black;
         margin-top: 0px;
@@ -105,93 +115,101 @@
   
   @media only screen and (max-width: 768px) {
     
-    .body_login {
-      background-color: rgb(255, 255, 255);
-      /* font-family: "Oswald", sans-serif; */
-      font-size: 15px;
-      letter-spacing: 0px;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
+      .body_login {
+        background-color: rgb(255, 255, 255);
+        /* font-family: "Oswald", sans-serif; */
+        font-size: 15px;
+        letter-spacing: 0px;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      
+      .contenedor {
+        text-align: center;
+        
+        .backIndex {
+          position: position;
+          left: 5px;
+          top: 30px;
+        }
+
+        .imgBack {
+          height: 25px;
+        }
+      }
+      
+      .title {
+        color: black;
+        margin-top: 0px;
+        padding: 5px 0px 5px 0px;
+        text-align: center;
+        color: white;
+        font-size: 60px;
+        width: 100%;
+      
+      }
+      
+      .login-1 {
+        text-align: center;
+        color: black;
+        margin: 10px 0px;
+      }
+      .login-2 {
+        text-align: center;
+        color: black;
+        margin: 10px 0px;
+      }
+      
+      .a-1 {
+        color: black;
+        margin-right: 10px;
+        font-size: 16px;
+        text-decoration: none;
+      }
+      
+      .a-2 {
+        color: black;
+        font-size: 16px;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 50px;
+      }
+      
+      .a-3 {
+        color: black;
+        font-size: 16px;
+        text-decoration: none;
+      }
+      
+      .a-4 {
+        margin: 15px 0px;
+      }
+      
+      .azul a:hover {
+        color: blue;
+      }
     
+      .enlace {
+        margin: 10px;
+      }
+      
+      .container-footer-login {
+        margin-top: 2%;
+        padding: 30px;
+      }
     
-    .contenedor {
-      text-align: center;
-    }
-    
-    .title {
-      color: black;
-      margin-top: 0px;
-      padding: 5px 0px 5px 0px;
-      text-align: center;
-      color: white;
-      font-size: 60px;
-      width: 100%;
-    
-    }
-    
-    .login-1 {
-      text-align: center;
-      color: black;
-      margin: 10px 0px;
-    }
-    .login-2 {
-      text-align: center;
-      color: black;
-      margin: 10px 0px;
-    }
-    
-    .a-1 {
-      color: black;
-      margin-right: 10px;
-      font-size: 16px;
-      text-decoration: none;
-    }
-    
-    .a-2 {
-      color: black;
-      font-size: 16px;
-      text-decoration: none;
-      display: inline-block;
-      margin-bottom: 50px;
-    }
-    
-    .a-3 {
-      color: black;
-      font-size: 16px;
-      text-decoration: none;
-    }
-    
-    .a-4 {
-      margin: 15px 0px;
-    }
-    
-    .azul a:hover {
-      color: blue;
-    }
-  
-    .enlace {
-      margin: 10px;
-    }
-    
-    .container-footer-login {
-      margin-top: 2%;
-      padding: 30px;
-    }
-  
-    .eslogan {
-      color: black;
-      text-align: center;
-      margin-top: 50px;
-      font-size: 20px;
-      font-family: monospace;
-      margin: 40px 0px;
-      display: inline-block;
-      padding: 0px 5px;
-      border-radius: 50px;
-    }
-  
+      .eslogan {
+        color: black;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 20px;
+        font-family: monospace;
+        margin: 40px 0px;
+        display: inline-block;
+        padding: 0px 5px;
+        border-radius: 50px;
+      }
+   }
   }
   
   /* fin mobile iniciar sesion */

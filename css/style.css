@@ -213,6 +213,12 @@ body {
   text-decoration: none; }
   .body_login .contenedor {
     text-align: center; }
+    .body_login .contenedor .backIndex {
+      position: absolute;
+      left: 10px;
+      top: 1px; }
+    .body_login .contenedor .imgBack {
+      height: 75px; }
     .body_login .contenedor .title {
       color: black;
       margin-top: 0px;
@@ -283,57 +289,63 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; }
-  .contenedor {
-    text-align: center; }
-  .title {
-    color: black;
-    margin-top: 0px;
-    padding: 5px 0px 5px 0px;
-    text-align: center;
-    color: white;
-    font-size: 60px;
-    width: 100%; }
-  .login-1 {
-    text-align: center;
-    color: black;
-    margin: 10px 0px; }
-  .login-2 {
-    text-align: center;
-    color: black;
-    margin: 10px 0px; }
-  .a-1 {
-    color: black;
-    margin-right: 10px;
-    font-size: 16px;
-    text-decoration: none; }
-  .a-2 {
-    color: black;
-    font-size: 16px;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 50px; }
-  .a-3 {
-    color: black;
-    font-size: 16px;
-    text-decoration: none; }
-  .a-4 {
-    margin: 15px 0px; }
-  .azul a:hover {
-    color: blue; }
-  .enlace {
-    margin: 10px; }
-  .container-footer-login {
-    margin-top: 2%;
-    padding: 30px; }
-  .eslogan {
-    color: black;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 20px;
-    font-family: monospace;
-    margin: 40px 0px;
-    display: inline-block;
-    padding: 0px 5px;
-    border-radius: 50px; } }
+    .body_login .contenedor {
+      text-align: center; }
+      .body_login .contenedor .backIndex {
+        position: position;
+        left: 5px;
+        top: 30px; }
+      .body_login .contenedor .imgBack {
+        height: 25px; }
+    .body_login .title {
+      color: black;
+      margin-top: 0px;
+      padding: 5px 0px 5px 0px;
+      text-align: center;
+      color: white;
+      font-size: 60px;
+      width: 100%; }
+    .body_login .login-1 {
+      text-align: center;
+      color: black;
+      margin: 10px 0px; }
+    .body_login .login-2 {
+      text-align: center;
+      color: black;
+      margin: 10px 0px; }
+    .body_login .a-1 {
+      color: black;
+      margin-right: 10px;
+      font-size: 16px;
+      text-decoration: none; }
+    .body_login .a-2 {
+      color: black;
+      font-size: 16px;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 50px; }
+    .body_login .a-3 {
+      color: black;
+      font-size: 16px;
+      text-decoration: none; }
+    .body_login .a-4 {
+      margin: 15px 0px; }
+    .body_login .azul a:hover {
+      color: blue; }
+    .body_login .enlace {
+      margin: 10px; }
+    .body_login .container-footer-login {
+      margin-top: 2%;
+      padding: 30px; }
+    .body_login .eslogan {
+      color: black;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 20px;
+      font-family: monospace;
+      margin: 40px 0px;
+      display: inline-block;
+      padding: 0px 5px;
+      border-radius: 50px; } }
 
 /* fin mobile iniciar sesion */
