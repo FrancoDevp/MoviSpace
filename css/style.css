@@ -18,6 +18,17 @@ body {
       box-shadow: 0px 0px 5px black; }
   body .promoPorta {
     background-color: #F9B208; }
+    body .promoPorta .input-cel {
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: 0.5px solid grey; }
+    body .promoPorta .boton {
+      font-family: 'Scheherazade New', serif;
+      margin: 0px 0px 0px 5px;
+      padding: 5px 10px 8px 10px;
+      font-size: 32px;
+      border: 0.5px solid grey;
+      border-radius: 10px; }
   body .container-footer {
     margin: 30px 0px 0px 0px;
     padding: 30px;
@@ -54,7 +65,8 @@ body {
       border-radius: 100px; }
     .card_margin .card .img {
       height: 50px;
-      width: 50px; }
+      width: 50px;
+      transform: rotate(90deg); }
     .card_margin .card .title-pag-2 {
       border: 1px solid aquamarine;
       background-color: mediumaquamarine;
@@ -83,7 +95,8 @@ body {
     border-radius: 100px; }
   .img {
     height: 50px;
-    width: 50px; }
+    width: 50px;
+    transform: rotate(90deg); }
   p {
     margin: 0px 0px;
     padding: 5px 0px;
