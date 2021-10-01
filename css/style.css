@@ -141,7 +141,8 @@ body {
 @media only screen and (max-width: 768px) {
   .formulario {
     font-size: 15px;
-    margin: 20% 15% 5% 15%; } }
+    margin: 20% 15% 5% 15%;
+    text-align: center; } }
 
 /* fin de media only contacto */
 /* --------- PAGINA NOSOTROS ------- */
