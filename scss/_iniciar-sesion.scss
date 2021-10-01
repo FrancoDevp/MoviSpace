@@ -31,12 +31,12 @@
         color: black;
       }
 
-      .azul a:hover {
-        color: blue;
-      }
-
       .login-2 {
         color: black;
+      }
+
+      .azul a:hover {
+        color: blue;
       }
 
       .a-1 {
@@ -132,10 +132,12 @@
     }
     
     .login-1 {
+      text-align: center;
       color: black;
       margin: 10px 0px;
     }
     .login-2 {
+      text-align: center;
       color: black;
       margin: 10px 0px;
     }
@@ -164,7 +166,10 @@
     .a-4 {
       margin: 15px 0px;
     }
-  
+    
+    .azul a:hover {
+      color: blue;
+    }
   
     .enlace {
       margin: 10px;
