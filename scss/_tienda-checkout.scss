@@ -1,0 +1,49 @@
+.bck-tienda{
+  background-color: #FAFAFA;
+
+    .title-movispace {
+      background-color: #121212;
+      color: white;
+      text-decoration: none;
+    }
+    .content-plan {
+      padding: 10px 20px;
+      margin: 50px 0px 0px 0px;
+      // border: 1px solid black;
+      background-color: #FFFFFF;
+      box-shadow: 0px 0px 2px;
+      list-style: none;
+      text-decoration: none;
+      position: relative;
+
+        .title-planes {
+          font-size: 35px;
+        }
+
+        .content-valor {
+          position:absolute;
+          right:400px;
+          top: 15px;
+          font-size: 35px;
+        }
+    }
+      .buttom-tienda {
+        margin: 0px 0px 15px 170px;
+        padding: 0px 0px;
+        font-size: 18px;
+        width:140px;
+      }
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-movi {
+  margin-top: 50%;
+}
+
+.select {
+  width: 500px;
+}

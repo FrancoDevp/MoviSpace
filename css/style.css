@@ -1,55 +1,55 @@
-body {
+.body-bck {
   background-image: radial-gradient(circle at 13% 47%, rgba(72, 255, 255, 0.27) 0%, rgba(72, 255, 255, 0.27) 25%, transparent 25%, transparent 100%), radial-gradient(circle at 28% 63%, rgba(235, 9, 9, 0.09) 0%, rgba(235, 9, 9, 0.09) 16%, transparent 16%, transparent 100%), radial-gradient(circle at 81% 56%, rgba(243, 19, 243, 0.17) 0%, rgba(243, 19, 243, 0.17) 12%, transparent 12%, transparent 100%), radial-gradient(circle at 26% 48%, rgba(190, 192, 38, 0.42) 0%, rgba(190, 192, 38, 0.42) 6%, transparent 6%, transparent 100%), radial-gradient(circle at 97% 17%, rgba(72, 255, 255, 0.270588) 0%, rgba(72, 255, 255, 0.270588) 56%, transparent 56%, transparent 100%), radial-gradient(circle at 50% 100%, rgba(83, 154, 194, 0.16) 0%, rgba(83, 154, 194, 0.16) 36%, transparent 36%, transparent 100%), radial-gradient(circle at 55% 52%, rgba(69, 69, 69, 0.03) 0%, rgba(69, 69, 69, 0.03) 6%, transparent 6%, transparent 100%), linear-gradient(90deg, white, white); }
-  body .navbar-brand {
+  .body-bck .navbar-brand {
     font-size: 25px;
     font-family: "Yanone Kaffeesatz", sans-serif;
     padding: 0px 40px; }
-  body .main_carousel {
+  .body-bck .main_carousel {
     margin-top: 100px; }
-  body .main_card {
+  .body-bck .main_card {
     margin-top: 50px;
     margin-bottom: 100px;
     color: black; }
-    body .main_card .main__info_card {
+    .body-bck .main_card .main__info_card {
       color: black; }
-    body .main_card .card_equipo {
+    .body-bck .main_card .card_equipo {
       margin: 30px 100px; }
-    body .main_card .border-1 {
+    .body-bck .main_card .border-1 {
       box-shadow: 0px 0px 5px black; }
-  body .promoPorta {
+  .body-bck .promoPorta {
     background-color: #F9B208; }
-    body .promoPorta .input-cel {
+    .body-bck .promoPorta .input-cel {
       padding: 5px 10px;
       border-radius: 10px;
       border: 0.5px solid grey; }
-    body .promoPorta .boton {
+    .body-bck .promoPorta .boton {
       font-family: 'Scheherazade New', serif;
       margin: 0px 0px 0px 5px;
       padding: 5px 10px 8px 10px;
       font-size: 32px;
       border: 0.5px solid grey;
       border-radius: 10px; }
-    body .promoPorta .boton:hover {
+    .body-bck .promoPorta .boton:hover {
       background: #CEFFFF; }
-  body .container-footer {
+  .body-bck .container-footer {
     margin: 30px 0px 0px 0px;
     padding: 30px;
     box-shadow: 0px 1px 3px grey; }
-    body .container-footer .footer_parrafo {
+    .body-bck .container-footer .footer_parrafo {
       font-size: 16px; }
-    body .container-footer li {
+    .body-bck .container-footer li {
       list-style-type: none; }
-    body .container-footer a {
+    .body-bck .container-footer a {
       text-decoration: none !important;
       color: black; }
-    body .container-footer .ul-1 {
+    .body-bck .container-footer .ul-1 {
       font-size: 16px;
       padding: 4px; }
-    body .container-footer li {
+    .body-bck .container-footer li {
       padding: 3px; }
-    body .container-footer a:hover {
+    .body-bck .container-footer a:hover {
       color: #308a8a; }
-    body .container-footer .nav-link:hover {
+    .body-bck .container-footer .nav-link:hover {
       color: #308a8a; }
 
 /* PAGINA PRODUCTOS */
@@ -352,3 +352,39 @@ body {
       border-radius: 50px; } }
 
 /* fin mobile iniciar sesion */
+.bck-tienda {
+  background-color: #FAFAFA; }
+  .bck-tienda .title-movispace {
+    background-color: #121212;
+    color: white;
+    text-decoration: none; }
+  .bck-tienda .content-plan {
+    padding: 10px 20px;
+    margin: 50px 0px 0px 0px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 2px;
+    list-style: none;
+    text-decoration: none;
+    position: relative; }
+    .bck-tienda .content-plan .title-planes {
+      font-size: 35px; }
+    .bck-tienda .content-plan .content-valor {
+      position: absolute;
+      right: 400px;
+      top: 15px;
+      font-size: 35px; }
+  .bck-tienda .buttom-tienda {
+    margin: 0px 0px 15px 170px;
+    padding: 0px 0px;
+    font-size: 18px;
+    width: 140px; }
+
+li {
+  list-style: none;
+  text-decoration: none; }
+
+.footer-movi {
+  margin-top: 50%; }
+
+.select {
+  width: 500px; }
