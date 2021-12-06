@@ -44,7 +44,6 @@ for (let i = 0; i < provincias.length; i++) {
 }
 
 localidadesDom.addEventListener("change", function (e) {
-    let total = document.createElement("p")
-    total.innerHTML = "Total: $" + e.target.value
-    document.getElementById("total").appendChild(total)
+    let total = document.getElementById("total")
+    total.innerHTML = "Total: $" + (Number(e.target.value) + Number(350))
 });
