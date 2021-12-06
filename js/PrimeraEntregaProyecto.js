@@ -37,7 +37,14 @@ const provincias = ["buenos aires", "catamarca", "chaco", "chubut", "cordoba", "
 
 const localidadesDom = document.getElementById("provincias")
 for (let i = 0; i < provincias.length; i++) {
-let option = document.createElement("option")
-option.appendChild(new Option(provincias[i] + " $" + precios[i],precios[i]))
-localidadesDom.appendChild(option)
+    let option = document.createElement("option")
+    option.innerHTML = provincias[i]
+    option.value = precios[i]
+    localidadesDom.appendChild(option)
 }
+
+localidadesDom.addEventListener("change", function (e) {
+    let total = document.createElement("p")
+    total.innerHTML = "Total: $" + e.target.value
+    document.getElementById("total").appendChild(total)
+});
