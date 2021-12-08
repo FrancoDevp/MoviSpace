@@ -1,11 +1,40 @@
 .bck-tienda{
   background-color: #FAFAFA;
-
+  background-image: linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(90deg, rgb(195, 195, 195),rgb(228, 228, 228)); background-blend-mode:overlay,overlay,overlay,normal;
+  
     .title-movispace {
       background-color: #121212;
       color: white;
       text-decoration: none;
     }
+
+    .formulario-tienda {
+      background-color: #FFFFFF;
+      margin-top: 50px;
+      padding: 50px 50px;
+      font-family: Roboto-Regular,sans-serif;
+      display: grid;
+      border: 1px solid grey;
+      border-radius: 10px;
+      box-shadow: 0px 0px 2px;
+    }
+
+    input {
+      height:50px;
+      width: 400px;
+      margin: 15px;
+      padding: 0px 5px;
+      font-family: Roboto-Regular,sans-serif;
+      font-size: 16px;
+      border-color: grey;
+      border: 1px solid grey;
+    }
+
+    input:hover {
+      box-shadow: 0px 0px 5px 0px #00AAE4;
+      // #F5FAFC
+    }
+
     .content-plan {
       padding: 10px 20px;
       margin: 50px 0px 0px 0px;
@@ -28,10 +57,14 @@
         }
     }
       .buttom-tienda {
-        margin: 0px 0px 15px 170px;
-        padding: 0px 0px;
+        margin: 0px 0px 50px 45px;
+        padding: 10px 15px;
         font-size: 18px;
-        width:140px;
+        width: 80%;
+      }
+
+      .buttom-tienda:hover {
+        background-color:grey ;
       }
 }
 
@@ -41,9 +74,12 @@ li {
 }
 
 .footer-movi {
-  margin-top: 50%;
+  margin-top: 10%;
+  margin-bottom: 2%;
 }
 
 .select {
   width: 500px;
+  height: 30px;
+  font-size:18px;
 }

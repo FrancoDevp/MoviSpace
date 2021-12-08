@@ -31,6 +31,7 @@
         <div class="row">
             <div class="col-lg-12 col-xs-12">
                 <h1><a class="title-movispace" href="../index.html">Movispace</a></h1>
+               
             </div>
         </div>
     </div>
@@ -50,29 +51,32 @@
                         </ul>
                     </div>
                     <div class="content-valor">
-                        <h2 id="valorDelPlan">Valor del PLAN:</h2>
-                            <p id="costo-3g" onclick="">$350</p>
+                        <h2 id="valorDelPlan">Valor del Plan</h2>
+                        <p id="costo-3g" onclick="">$350</p>
                     </div>
                 </div>
-                <form class=""><br>
-                    <h3>¡Empecemos!<br>
-                        Ingresá tus datos para avanzar con la compra</h3><br>
-                    <label>Nombre:
-                        <input class="input" type="text" name="Nombre..." placeholder="nombre..."><br>
-                    </label>
-                    <label>E-mail:
-                        <input class="input" type="email" name="E-mail..." placeholder="E-mail..." id="email"><br>
-                    </label><br><br>
-                    <input type="submit" value="enviar" class="buttom-tienda">
-                    <div>
-                        <h3>Valor del envio de acuerdo a su provincia</h3>
-                    </div>
-                    <select class="select" id="provincias"></select>
-                </form>
-                <br>
-                <h3>Costo total a abonar en su primera Factura: </h3>
-                <div>
-                    <p id="total"></p>
+                <div class="d-flex justify-content-center ">
+                    <form class="formulario-tienda" id="formulario"><br>
+                        <h2>Completá tus datos y nos contactaremos</h2><br>
+                        <label class="h4">Nombre y Apellido<br>
+                            <input class="input" type="text" name="Nombre y Apellido" placeholder="Ej: Franco Martinez"
+                                id="nombre"><br>
+                        </label>
+                        <label class="h4">E-mail<br>
+                            <input class="input" type="email" name="E-mail..." placeholder="ejemplo@hotmail.com"
+                                id="email"><br>
+                        </label>
+
+                        <div>
+                            <h3 class="mt-4">Valor del envio de acuerdo a su provincia</h3>
+                        </div>
+                        <select class="select mt-3" id="provincias"></select>
+                        <h3 class="mt-5">Costo total a abonar en su primera Factura: </h3>
+                        <div>
+                            <h4 id="total" class="total mb-5"></h4>
+                        </div>
+                        <input type="submit" value="enviar" class="btn btn-dark buttom-tienda" id=open>
+                    </form>
                 </div>
             </div>
         </div>
