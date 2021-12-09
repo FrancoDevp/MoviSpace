@@ -39,28 +39,28 @@
                 <div class="content-plan">
                     <div class="content-description">
                         <ul>
-                            <h2 class="title-planes" id="plan">Plan 3G</h2>
+                            <h2 class="title-planes" id="plan">Plan 5G</h2>
                             <li>Caracteristica del Plan:</li>
-                            <li>Whatsapp Gratis + 3GB de regalo</li>
-                            <li>Con este plan ya accedes a tu 1 mes gratis para MoviPlay, para que disfrutes de la mejor
+                            <li>Whatsapp Gratis + 10GB de regalo.</li>
+                            <li>Con este plan ya accedes a tu 3 mes gratis para MoviPlay, para que disfrutes de la mejor
                                 musica.</li>
-                            <li>Roaming con paises Limitrofes</li>
-                            <li>Llamadas ilimitadas a todas las companias</li>
+                            <li>Roaming con paises de America.</li>
+                            <li>Llamadas ilimitadas a todas las companias.</li>
                         </ul>
                     </div>
                     <div class="content-valor">
                         <h2 id="valorDelPlan">Valor del Plan</h2>
-                        <p id="costo-3g">$350</p>
+                        <p id="costo-5g">$650</p>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
                     <form class="formulario-tienda" id="formulario"><br>
                         <h2>Completá tus datos y nos contactaremos</h2><br>
-                        <label class="h4 text-center">Nombre y Apellido<br>
+                        <label class="h4 text-center" id="mostrarNombreApellido">Nombre y Apellido<br>
                             <input class="input" type="text" name="Nombre y Apellido" placeholder="Ej: Franco Martinez"
-                            id="nombreApellido"><br>
+                                id="nombre"><br>
                         </label>
-                        <label class="h4 text-center">E-mail<br>
+                        <label class="h4 text-center" id="mostrarEmail">E-mail<br>
                             <input class="input" type="email" name="E-mail..." placeholder="ejemplo@hotmail.com"
                                 id="email"><br>
                         </label>
@@ -68,29 +68,30 @@
                             <h3 class="mt-4 text-center">Valor del envio de acuerdo a su provincia</h3>
                         </div>
                         <select class="select mt-3" id="provincias"></select>
-                        <h3 class="mt-5 text-center">Valor del envio: </h3>
+                        <h3 class="mt-5 text-center">Costo total a abonar en su primera Factura: </h3>
                         <div>
-                            <h4 id="total" class="total mb-5 text-center"></h4>
+                            <h4 id="total" class="total mb-5"></h4>
                         </div>
-                        <!-- input  -->
-                        <input type="submit" value="enviar" class="btn btn-dark buttom-tienda" id="open-modal" data-bs-toggle="modal" data-bs-target="#modal" disabled>
+                        <input type="submit" value="enviar" class="btn btn-dark buttom-tienda" id="open-modal" data-bs-toggle="modal" data-bs-target="#modal">
                         <!--  -->
-                        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <divdiv class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">MoviSpace</h5>
+                                  <h5 class="modal-title" id="exampleModalLabel">Gracias!</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                  <p id="">Gracias, te contactaremos via E-mail en las proximas 24hs.</p>
+                                  <p id="">Gracias, te contactaremos via E-mail.</p>
+                                  <p id="">Movispace</p>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
                                 </div>
                               </div>
                             </div>
-                          </div>
+                          </divdiv>
                         <!--  -->
                     </form>
                 </div>
