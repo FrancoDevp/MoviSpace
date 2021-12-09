@@ -13,11 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/animate.css">
@@ -55,27 +53,46 @@
                         <p id="costo-3g" onclick="">$350</p>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center ">
+                <div class="d-flex justify-content-center">
                     <form class="formulario-tienda" id="formulario"><br>
                         <h2>Completá tus datos y nos contactaremos</h2><br>
-                        <label class="h4">Nombre y Apellido<br>
+                        <label class="h4 text-center" id="mostrarNombreApellido">Nombre y Apellido<br>
                             <input class="input" type="text" name="Nombre y Apellido" placeholder="Ej: Franco Martinez"
                                 id="nombre"><br>
                         </label>
-                        <label class="h4">E-mail<br>
+                        <label class="h4 text-center" id="mostrarEmail">E-mail<br>
                             <input class="input" type="email" name="E-mail..." placeholder="ejemplo@hotmail.com"
                                 id="email"><br>
                         </label>
-
                         <div>
-                            <h3 class="mt-4">Valor del envio de acuerdo a su provincia</h3>
+                            <h3 class="mt-4 text-center">Valor del envio de acuerdo a su provincia</h3>
                         </div>
                         <select class="select mt-3" id="provincias"></select>
-                        <h3 class="mt-5">Costo total a abonar en su primera Factura: </h3>
+                        <h3 class="mt-5 text-center">Costo total a abonar en su primera Factura: </h3>
                         <div>
                             <h4 id="total" class="total mb-5"></h4>
                         </div>
-                        <input type="submit" value="enviar" class="btn btn-dark buttom-tienda" id=open>
+                        <input type="submit" value="enviar" class="btn btn-dark buttom-tienda" id="open-modal" data-bs-toggle="modal" data-bs-target="#modal">
+                        <!--  -->
+                        <divdiv class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Gracias!</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <p id="">Gracias, te contactaremos via E-mail.</p>
+                                  <p id="">Movispace</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </divdiv>
+                        <!--  -->
                     </form>
                 </div>
             </div>
