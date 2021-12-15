@@ -48,10 +48,8 @@ localidadesDom.addEventListener("change", function (e) {
     });
     
 }());
-
     $("#valorEnvio").append("Valor del envio")
-    $("#volver").append("Volver")
-    $("#volver").css({"color":"green", "margin-top":"10px", "position": "absolute", "left": "50px"})
+    $("#flecha").css({"left": "20px"})
 
 
     let enviarBoton = document.getElementById("open-modal");

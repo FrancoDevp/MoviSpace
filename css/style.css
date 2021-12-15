@@ -495,7 +495,6 @@ li {
     .bck-tienda .buttom-tienda:hover {
       background-color: grey; }
     .bck-tienda .arrow {
-      margin-left: 15px;
       position: absolute;
       top: 10%;
       width: 3vmin;
