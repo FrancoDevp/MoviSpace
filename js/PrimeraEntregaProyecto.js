@@ -47,8 +47,13 @@ localidadesDom.addEventListener("change", function (e) {
 
     });
     
-
 }());
+
+    $("#valorEnvio").append("Valor del envio")
+    $("#volver").append("Volver")
+    $("#volver").css({"color":"green", "margin-top":"10px", "position": "absolute", "left": "50px"})
+
+
     let enviarBoton = document.getElementById("open-modal");
     console.log(nombreApellido);
 
@@ -62,19 +67,6 @@ function habilitar(){
 
 } 
 
-// val = 0;
-// if (nombreApellido.value === ''){
-//     val++;
-// }
-// if (email.value === ''){
-//     val++;
-// }
-// if (val === 0) {
-//     enviarBoton.disabled = false;
-// } else {
-//     enviarBoton.disabled = true;
-// }
-// console.log(nombreApellido.value);
 
 nombreApellido.addEventListener("blur", habilitar);
 email.addEventListener("blur", habilitar);

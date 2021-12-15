@@ -36,6 +36,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-xs-12">
+                <a href="../pages/planes-mobiles/mobiles.html" class="arrow left"></a>
                 <div class="content-plan">
                     <div class="content-description">
                         <ul>
@@ -58,9 +59,9 @@
                         <h2>Completá tus datos y nos contactaremos</h2><br>
                         <label class="h4 text-center" id="mostrarNombreApellido">Nombre y Apellido<br>
                             <input class="input" type="text" name="Nombre y Apellido" placeholder="Ej: Franco Martinez"
-                                id="nombre"><br>
+                                id="nombreApellido"><br>
                         </label>
-                        <label class="h4 text-center" id="mostrarEmail">E-mail<br>
+                        <label class="h4 text-center" id="email">E-mail<br>
                             <input class="input" type="email" name="E-mail..." placeholder="ejemplo@hotmail.com"
                                 id="email"><br>
                         </label>
@@ -68,11 +69,11 @@
                             <h3 class="mt-4 text-center">Valor del envio de acuerdo a su provincia</h3>
                         </div>
                         <select class="select mt-3" id="provincias"></select>
-                        <h3 class="mt-5 text-center">Costo total a abonar en su primera Factura: </h3>
+                        <h3 class="mt-5 text-center" id="valorEnvio"></h3>
                         <div>
                             <h4 id="total" class="total mb-5"></h4>
                         </div>
-                        <input type="submit" value="enviar" class="btn btn-dark buttom-tienda" id="open-modal" data-bs-toggle="modal" data-bs-target="#modal">
+                        <input type="submit" value="enviar" class="btn btn-dark buttom-tienda" id="open-modal" data-bs-toggle="modal" data-bs-target="#modal" disabled>
                         <!--  -->
                         <divdiv class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
