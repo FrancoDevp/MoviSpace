@@ -19,7 +19,7 @@
       box-shadow: 0px 0px 2px;
     }
 
-    input {
+    .input {
       height:50px;
       width: 400px;
       margin: 15px;
@@ -30,8 +30,8 @@
       border: 1px solid grey;
     }
 
-    input:hover {
-      box-shadow: 0px 0px 5px 0px #00AAE4;
+    .input:hover {
+      box-shadow: 0px 0px 5px 0px #00abe4;
       // #F5FAFC
     }
 

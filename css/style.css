@@ -53,6 +53,9 @@
       color: #308a8a; }
 
 /* PAGINA PRODUCTOS */
+.body-bck {
+  background-image: radial-gradient(circle at 13% 47%, rgba(72, 255, 255, 0.27) 0%, rgba(72, 255, 255, 0.27) 25%, transparent 25%, transparent 100%), radial-gradient(circle at 28% 63%, rgba(235, 9, 9, 0.09) 0%, rgba(235, 9, 9, 0.09) 16%, transparent 16%, transparent 100%), radial-gradient(circle at 81% 56%, rgba(243, 19, 243, 0.17) 0%, rgba(243, 19, 243, 0.17) 12%, transparent 12%, transparent 100%), radial-gradient(circle at 26% 48%, rgba(190, 192, 38, 0.42) 0%, rgba(190, 192, 38, 0.42) 6%, transparent 6%, transparent 100%), radial-gradient(circle at 97% 17%, rgba(72, 255, 255, 0.270588) 0%, rgba(72, 255, 255, 0.270588) 56%, transparent 56%, transparent 100%), radial-gradient(circle at 50% 100%, rgba(83, 154, 194, 0.16) 0%, rgba(83, 154, 194, 0.16) 36%, transparent 36%, transparent 100%), radial-gradient(circle at 55% 52%, rgba(69, 69, 69, 0.03) 0%, rgba(69, 69, 69, 0.03) 6%, transparent 6%, transparent 100%), linear-gradient(90deg, white, white); }
+
 .card_margin {
   margin: 100px 0px 80px 0px; }
   .card_margin .card {
@@ -129,7 +132,7 @@
   align-items: center;
   border: 1px solid;
   border-color: grey;
-  border-radius: 50px;
+  border-radius: 15px;
   box-shadow: 0px 0px 10px 1px grey;
   background-image: linear-gradient(306deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 99.999%), linear-gradient(353deg, rgba(81, 81, 81, 0.05) 0%, rgba(81, 81, 81, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 99.999%), linear-gradient(140deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 99.999%), linear-gradient(189deg, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 99.999%), linear-gradient(90deg, #09c9ba, #1283dd);
   font-size: 20px;
@@ -158,7 +161,9 @@
   .formulario {
     font-size: 15px;
     margin: 20% 15% 5% 15%;
-    text-align: center; } }
+    text-align: center; }
+    .formulario .select-contact {
+      Width: 60vmin; } }
 
 /* fin de media only contacto */
 /* --------- PAGINA NOSOTROS ------- */
@@ -369,7 +374,7 @@
     border: 1px solid grey;
     border-radius: 10px;
     box-shadow: 0px 0px 2px; }
-  .bck-tienda input {
+  .bck-tienda .input {
     height: 50px;
     width: 400px;
     margin: 15px;
@@ -378,8 +383,8 @@
     font-size: 16px;
     border-color: grey;
     border: 1px solid grey; }
-  .bck-tienda input:hover {
-    box-shadow: 0px 0px 5px 0px #00AAE4; }
+  .bck-tienda .input:hover {
+    box-shadow: 0px 0px 5px 0px #00abe4; }
   .bck-tienda .content-plan {
     padding: 10px 20px;
     margin: 50px 0px 0px 0px;

@@ -50,6 +50,22 @@ localidadesDom.addEventListener("change", function (e) {
 }());
     $("#valorEnvio").append("Valor del envio")
     $("#flecha").css({"left": "20px"})
+    // 
+    $("#nombreApellido").mouseenter( function() {
+        $("#nombreApellido").css({"background-color": "#91d9f1"})
+    })
+    $("#email").mouseenter( function() {
+        $("#email").css({"background-color": "#91d9f1"})
+    })
+    $("#nombreApellido").mouseleave( function() {
+        $("#nombreApellido").css({"background-color": "white"})
+    })
+    $("#email").mouseleave( function() {
+        $("#email").css({"background-color": "white"})
+    })
+    // 
+    
+
 
 
     let enviarBoton = document.getElementById("open-modal");
