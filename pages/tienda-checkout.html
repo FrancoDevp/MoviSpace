@@ -13,9 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/animate.css">
@@ -58,41 +63,47 @@
                         <h2>Completá tus datos y nos contactaremos</h2><br>
                         <label class="h4 text-center">Nombre y Apellido<br>
                             <input class="input" type="text" name="Nombre y Apellido" placeholder="Ej: Franco Martinez"
-                            id="nombreApellido"><br>
+                                id="nombreApellido"><br>
                         </label>
                         <label class="h4 text-center">E-mail<br>
-                            <input class="input" type="email" name="E-mail..." placeholder="ejemplo@hotmail.com"
+                            <input class="input" type="email" name="E-mail" placeholder="ejemplo@hotmail.com"
                                 id="email"><br>
                         </label>
-                        <div>
+                        <div style="padding: 0px 53px;">
+                            <p id="contenedor" class="h4 text-center ubicacion" style=""></p>
+                            <button class="btn btn-success buttom-tienda mt-3" onclick="miUbicacion()" style="">Validar
+                                ubicación</button>
                             <h3 class="mt-4 text-center">Valor del envio de acuerdo a su provincia</h3>
                         </div>
-                        <select class="select mt-3" id="provincias"></select>
+                        <select class="select mt-3 ms-4" id="provincias"></select>
                         <h3 class="mt-5 text-center" id="valorEnvio"></h3>
                         <div>
                             <h4 id="total" class="total mb-5 text-center"></h4>
                         </div>
                         <!-- input  -->
-                        <input type="submit" value="enviar" class="btn btn-dark buttom-tienda" id="open-modal" data-bs-toggle="modal" data-bs-target="#modal" disabled>
-                        <!--  -->
-                        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <input type="submit" value="enviar" class="btn btn-dark buttom-tienda" id="open-modal"
+                            data-bs-toggle="modal" data-bs-target="#modal" disabled>
+                        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">MoviSpace</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">MoviSpace</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Gracias, te contactaremos via E-mail para el seguimiento del Chip.</p>
+                                        <p>Movispace</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-                                    <p>Gracias, te contactaremos via E-mail para el seguimiento del Chip.</p>
-                                    <p>Movispace</p>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                              </div>
                             </div>
-                          </div>
-                        <!--  -->
+                        </div>
+
                     </form>
                 </div>
             </div>

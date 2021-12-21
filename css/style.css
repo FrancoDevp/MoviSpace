@@ -412,6 +412,13 @@
     width: 80%; }
   .bck-tienda .buttom-tienda:hover {
     background-color: grey; }
+  .bck-tienda .ubicacion {
+    display: flex;
+    justify-content: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px; }
   .bck-tienda .arrow {
     margin-left: 15px;
     position: absolute;

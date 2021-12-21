@@ -81,8 +81,14 @@ email.addEventListener("blur", habilitar);
 document.getElementById("open-modal").addEventListener("click", () => { });
 
 
+// 
+// API
 
-// Pagina LOGIN
-
-
-
+function miUbicacion() {
+    $.get("https://freegeoip.app/json/" + "", function (respuesta, estado) {
+        if (estado === "success"){
+        $('#contenedor').html(respuesta.country_name + ", " + respuesta.region_name + ", "+ respuesta.zip_code);
+            }
+    });
+          
+}
