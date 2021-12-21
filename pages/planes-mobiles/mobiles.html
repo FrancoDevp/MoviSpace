@@ -135,7 +135,7 @@
   </div>
   <!-- fin de neuvas cards -->
   </div>
-  <div class="text-center"><button id="btn-vermas" class="btn btn-dark">Ver mas</button></div>
+  <div class="text-center"><button id="btn-vermas" class="btn btn-dark ver-mas">Ver mas</button></div>
   <div class="container-fluid container-footer" id="footer-mobiles" style="display: none;">
     <div class="row">
       <!-- FOOTER -->
@@ -193,7 +193,7 @@
   </script>
   <script>
     $("#btn-vermas").click(function () {
-      $("#footer-mobiles").toggle("slow");
+      $("#footer-mobiles").slideToggle("slow");
       if ($("#btn-vermas").html() == "Ver mas") {
         $("#btn-vermas").html("Ver menos")
       } else {
