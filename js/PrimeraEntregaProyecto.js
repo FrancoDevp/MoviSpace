@@ -1,4 +1,6 @@
 
+// Validacion de formulario
+
 let nombreApellido = document.getElementById("nombreApellido");
 let email = document.getElementById("email");
 const inputEmail = document.getElementById("email")
@@ -10,6 +12,26 @@ function validarFormulario(e) {
     nombreApellido.value = "";
     inputEmail.value = "";
 }
+
+// Habilitacion de boton.
+
+let enviarBoton = document.getElementById("open-modal");
+console.log(nombreApellido);
+
+function habilitar() {
+    if (nombreApellido.value !== '' && email.value !== '') {
+        enviarBoton.disabled = false;
+    } else {
+        enviarBoton.disabled = true;
+    }
+}
+
+nombreApellido.addEventListener("blur", habilitar);
+email.addEventListener("blur", habilitar);
+document.getElementById("open-modal").addEventListener("click", () => { });
+
+
+//  Array de productos y envio
 
 let pack3g = 350;
 let pack5g = 650;
@@ -36,6 +58,7 @@ localidadesDom.addEventListener("change", function (e) {
     total.innerHTML = "Total: $" + (Number(e.target.value))
 });
 
+// Apertura de Modal
 
 (function () {
 
@@ -48,6 +71,8 @@ localidadesDom.addEventListener("change", function (e) {
     });
 
 }());
+
+
 $("#valorEnvio").append("Valor del envio")
 $("#flecha").css({ "left": "20px" })
 // 
@@ -65,23 +90,6 @@ $("#email").mouseleave(function () {
 })
 
 
-let enviarBoton = document.getElementById("open-modal");
-console.log(nombreApellido);
-
-function habilitar() {
-    if (nombreApellido.value !== '' && email.value !== '') {
-        enviarBoton.disabled = false;
-    } else {
-        enviarBoton.disabled = true;
-    }
-}
-
-nombreApellido.addEventListener("blur", habilitar);
-email.addEventListener("blur", habilitar);
-document.getElementById("open-modal").addEventListener("click", () => { });
-
-
-// 
 // API
 
 function miUbicacion() {
