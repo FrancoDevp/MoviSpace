@@ -44,6 +44,16 @@
         box-shadow: 0px 0px 10px grey;
     }
     
+    .cardPhone {
+        width: 18rem;
+    }
+
+    .img-phone {
+        width: 18rem;
+    }
+
+
+
 }
 
     @font-face {
@@ -51,7 +61,30 @@
         src: url("../assets/fonts/Like Snow.ttf");
         
     }
+    @font-face {
+        font-family: "precioType";
+        src: url("../assets/fonts/Electromagnetic Lungs.otf");
+        
+    }
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @media only screen and (max-width: 768px) {
 
         .tienda-celular {
@@ -72,6 +105,45 @@
                 position: relative;
                 bottom:55px;
                 left:25px;
+            }
+
+            .titleModelo {
+                text-align: center;
+            }
+            
+
+            .card-Phone {
+                display: grid;
+                grid-template-areas:
+                "imagen titulo precio";
+                grid-template-columns: 40% 60%;
+                grid-template-rows: 220px;
+                align-items:center;
+
+                
+
+                width: 100%;
+
+                    .img-phone {
+                        width: 10rem;
+                        height:15rem;
+                    }
+
+                    .TitleModelo {
+                        display:flex;
+                        justify-content:center;
+                        position:absolute;
+                        top: 10px;
+                        font-size: 28px;
+                    }
+
+                    .precio {
+                        margin-top: 20PX;
+                        font-size:35px;
+                        display:flex;
+                        justify-content:start;
+                    }
+                
             }
             
             .titleMarca {
@@ -113,3 +185,6 @@
             }
 
 }
+
+
+

@@ -575,10 +575,18 @@ li {
     padding: 5px 10px; }
   .tienda-celular .card {
     box-shadow: 0px 0px 10px grey; }
+  .tienda-celular .cardPhone {
+    width: 18rem; }
+  .tienda-celular .img-phone {
+    width: 18rem; }
 
 @font-face {
   font-family: "samsung";
   src: url("../assets/fonts/Like Snow.ttf"); }
+
+@font-face {
+  font-family: "precioType";
+  src: url("../assets/fonts/Electromagnetic Lungs.otf"); }
 
 @media only screen and (max-width: 768px) {
   .tienda-celular {
@@ -596,6 +604,29 @@ li {
       position: relative;
       bottom: 55px;
       left: 25px; }
+    .tienda-celular .titleModelo {
+      text-align: center; }
+    .tienda-celular .card-Phone {
+      display: grid;
+      grid-template-areas: "imagen titulo precio";
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 220px;
+      align-items: center;
+      width: 100%; }
+      .tienda-celular .card-Phone .img-phone {
+        width: 10rem;
+        height: 15rem; }
+      .tienda-celular .card-Phone .TitleModelo {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 10px;
+        font-size: 28px; }
+      .tienda-celular .card-Phone .precio {
+        margin-top: 20PX;
+        font-size: 35px;
+        display: flex;
+        justify-content: start; }
     .tienda-celular .titleMarca {
       font-family: "samsung";
       font-size: 50px;
