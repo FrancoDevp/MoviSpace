@@ -63,10 +63,13 @@
                     <a class="nav-link" href="./pages/productos-2.html">Planes Corporativos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="./pages/tienda-celular.html">Tienda Celular</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    <a class="nav-link" href="./pages/nosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contactanos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./pages/iniciar-sesion.html">Login</a>
@@ -240,7 +243,7 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -256,26 +259,7 @@
   <script>new WOW().init();</script>
 
    <!-- index.js -->
-  <script>
-    $("#portabilidad").click(function () {
-      $("#info-portabilidad").slideToggle("slow");
-    })
-
-    let enviarPlan = document.getElementById("celular");
-    console.log(enviarPlan);
-
-    function habilitarPlan() {
-      if (numeroCelular.value !== '') {
-        enviarPlan.disabled = false;
-      } else {
-        enviarPlan.disabled = true;
-      }
-    }
-
-    numeroCelular.addEventListener("blur", habilitarPlan);
-    document.getElementById("celular").addEventListener("click", () => { });
-
-  </script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

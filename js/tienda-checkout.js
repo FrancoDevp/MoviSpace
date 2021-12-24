@@ -89,7 +89,6 @@ $("#email").mouseleave(function () {
     $("#email").css({ "background-color": "white" })
 })
 
-
 // API
 
 function miUbicacion() {
