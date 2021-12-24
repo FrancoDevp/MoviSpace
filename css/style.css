@@ -563,7 +563,9 @@ li {
     margin-bottom: 50px; }
   .tienda-celular .navv h2 a {
     display: inline-block;
-    background-color: #E9E9E9;
+    padding: 5px 5px;
+    border-radius: 10px;
+    background-color: #CCCCCC;
     transition: all 0.5s;
     text-decoration: none;
     color: black; }
@@ -573,6 +575,13 @@ li {
     border-radius: 10px;
     background: linear-gradient(to top, #1F84B9 0 5%, #E9E9E9 30% 100%);
     padding: 5px 10px; }
+  .tienda-celular .subir {
+    border-radius: 30px;
+    color: #1F84B9;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "samsung";
+    font-size: 30px; }
   .tienda-celular .card {
     box-shadow: 0px 0px 10px grey; }
   .tienda-celular .cardPhone {
@@ -590,7 +599,8 @@ li {
 
 @media only screen and (max-width: 768px) {
   .tienda-celular {
-    background-color: #E9E9E9; }
+    background-color: #E9E9E9;
+    overflow-x: hidden; }
     .tienda-celular .title-movispace {
       background-color: #1F84B9;
       color: white;
@@ -606,6 +616,29 @@ li {
       left: 25px; }
     .tienda-celular .titleModelo {
       text-align: center; }
+    .tienda-celular .menu {
+      display: grid;
+      grid-template-areas: "samsung motorola xiaomi iphone";
+      grid-template-columns: 105px 105px 105px 105px;
+      background-color: #CCCCCC;
+      border-radius: 50px; }
+    .tienda-celular .menu a {
+      display: inline-block;
+      transition: all 0.5s;
+      text-decoration: none;
+      color: black; }
+    .tienda-celular .menu a:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 5px 1px #1F84B9;
+      border-radius: 10px;
+      background: linear-gradient(to top, #1F84B9 0 5%, #E9E9E9 30% 100%);
+      padding: 5px 10px; }
+    .tienda-celular .subir {
+      color: #1F84B9;
+      text-decoration: none;
+      display: inline-block;
+      font-family: "samsung";
+      font-size: 18px; }
     .tienda-celular .card-Phone {
       display: grid;
       grid-template-areas: "imagen titulo precio";
@@ -631,19 +664,8 @@ li {
       font-family: "samsung";
       font-size: 50px;
       margin-bottom: 50px; }
-    .tienda-celular .navv h2 a {
-      display: inline-block;
-      background-color: #E9E9E9;
-      transition: all 0.5s;
-      text-decoration: none;
-      color: black; }
-    .tienda-celular .navv h2 a:hover {
-      cursor: pointer;
-      box-shadow: 0px 0px 5px 1px #1F84B9;
-      border-radius: 10px;
-      background: linear-gradient(to top, #1F84B9 0 5%, #E9E9E9 30% 100%);
-      padding: 5px 10px; }
-    .tienda-celular .card {
+    .tienda-celular .navv
+.card {
       box-shadow: 0px 0px 10px grey; }
   @font-face {
     font-family: "samsung";

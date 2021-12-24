@@ -24,7 +24,9 @@
 
     .navv h2 a {
         display: inline-block;
-        background-color:#E9E9E9;
+        padding:5px 5px;
+        border-radius: 10px;
+        background-color:#CCCCCC;
         transition: all 0.5s;
         text-decoration: none;
         color: black;
@@ -38,6 +40,15 @@
         padding:5px 10px;
         
 
+    }
+
+    .subir {
+        border-radius: 30px;
+        color: #1F84B9;
+        text-decoration: none;
+        display: inline-block;
+        font-family: "samsung";
+        font-size:30px;
     }
 
     .card {
@@ -89,7 +100,7 @@
 
         .tienda-celular {
             background-color: #E9E9E9;
-            
+            overflow-x: hidden;
             .title-movispace {
               background-color: #1F84B9;
               color: white;
@@ -111,7 +122,42 @@
                 text-align: center;
             }
             
+            .menu {
+                display: grid;
+                grid-template-areas: 
+                "samsung motorola xiaomi iphone";
+                grid-template-columns: 105px 105px 105px 105px;
+                background-color: #CCCCCC;
+                border-radius: 50px;
+            }
 
+            .menu a {
+                display: inline-block;
+                // background-color:#E9E9E9;
+                transition: all 0.5s;
+                text-decoration: none;
+                color: black;
+                
+            }
+
+            .menu a:hover {
+                cursor: pointer;
+                box-shadow: 0px 0px 5px 1px #1F84B9;
+                border-radius: 10px;
+                background: linear-gradient(to top, #1F84B9 0 5%, #E9E9E9 30% 100%);
+                padding:5px 10px;
+            }
+
+            
+
+            .subir {
+                color: #1F84B9;
+                text-decoration: none;
+                display: inline-block;
+                font-family: "samsung";
+                font-size:18px;
+            }
+            
             .card-Phone {
                 display: grid;
                 grid-template-areas:
@@ -154,23 +200,9 @@
             
             
 
-            .navv h2 a {
-                display: inline-block;
-                background-color:#E9E9E9;
-                transition: all 0.5s;
-                text-decoration: none;
-                color: black;
-            }
+            
         
-            .navv h2 a:hover {
-                cursor: pointer;
-                box-shadow: 0px 0px 5px 1px #1F84B9;
-                border-radius: 10px;
-                background: linear-gradient(to top, #1F84B9 0 5%, #E9E9E9 30% 100%);
-                padding:5px 10px;
-                
-        
-            }
+            .navv 
         
             .card {
                 box-shadow: 0px 0px 10px grey;
