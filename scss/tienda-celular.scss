@@ -10,8 +10,16 @@
         width: 100%;
     }
 
-    .titleTienda:hover{
-        background: linear-gradient(to top, #1F84B9 0 5%, #E9E9E9 30% 100%);
+    .bck {
+        color: #212529;
+        text-decoration: none;
+    }
+
+    .bck:hover{
+        padding:0px 15px;
+        border-radius: 10px;
+        background: linear-gradient(to top, #1F84B9 0 5%, #CCCCCC 60% 100%);
+        transition: all 0.5s;
     }
     
     .carritoImg {
