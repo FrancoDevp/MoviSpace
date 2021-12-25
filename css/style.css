@@ -548,13 +548,11 @@ li {
 .tienda-celular {
   background-color: #E9E9E9;
   overflow-x: hidden; }
-  .tienda-celular .title-movispace {
-    background-color: #1F84B9;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 55px;
-    font-family: 'Lora', serif; }
+  .tienda-celular .titleTienda {
+    font-size: 100px;
+    font-family: "precioType";
+    background-color: #CCCCCC;
+    width: 100%; }
   .tienda-celular .carritoImg {
     width: 50px; }
   .tienda-celular .titleMarca {
@@ -562,6 +560,7 @@ li {
     font-size: 80px;
     margin-bottom: 50px; }
   .tienda-celular .navv h2 a {
+    font-family: "precioType";
     display: inline-block;
     padding: 5px 5px;
     border-radius: 10px;
@@ -588,6 +587,8 @@ li {
     width: 18rem; }
   .tienda-celular .img-phone {
     width: 18rem; }
+  .tienda-celular .flecha {
+    color: #212529; }
 
 @font-face {
   font-family: "samsung";
@@ -600,33 +601,32 @@ li {
 @media only screen and (max-width: 768px) {
   .tienda-celular {
     background-color: #E9E9E9;
-    overflow-x: hidden; }
-    .tienda-celular .title-movispace {
-      background-color: #1F84B9;
-      color: white;
-      text-decoration: none;
-      text-align: center;
-      font-size: 40px;
-      font-family: 'Lora', serif; }
+    overflow-x: hidden;
+    width: 100%; }
     .tienda-celular .carritoImg {
       width: 33px;
       margin-left: 80%;
       position: relative;
       bottom: 55px;
       left: 25px; }
+    .tienda-celular .titleTienda {
+      font-size: 50px;
+      font-family: "precioType"; }
     .tienda-celular .titleModelo {
       text-align: center; }
     .tienda-celular .menu {
       display: grid;
       grid-template-areas: "samsung motorola xiaomi iphone";
-      grid-template-columns: 105px 105px 105px 105px;
-      background-color: #CCCCCC;
+      grid-template-columns: 95px 95px 95px 95px;
       border-radius: 50px; }
     .tienda-celular .menu a {
       display: inline-block;
       transition: all 0.5s;
       text-decoration: none;
-      color: black; }
+      color: black;
+      font-family: "precioType"; }
+    .tienda-celular .navv a {
+      font-size: 15px; }
     .tienda-celular .menu a:hover {
       cursor: pointer;
       box-shadow: 0px 0px 5px 1px #1F84B9;
@@ -664,9 +664,11 @@ li {
       font-family: "samsung";
       font-size: 50px;
       margin-bottom: 50px; }
-    .tienda-celular .navv
-.card {
+    .tienda-celular .card {
       box-shadow: 0px 0px 10px grey; }
+    .tienda-celular .flecha {
+      margin: 5px;
+      height: 10px; }
   @font-face {
     font-family: "samsung";
     src: url("../assets/fonts/Like Snow.ttf"); } }

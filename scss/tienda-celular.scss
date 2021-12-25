@@ -2,14 +2,12 @@
     background-color: #E9E9E9;
     overflow-x: hidden;
     
-    .title-movispace {
-      background-color: #1F84B9;
-      color: white;
-      text-decoration: none;
-      text-align: center;
-    //   font-family: "Navidad";
-      font-size: 55px;
-      font-family: 'Lora', serif;
+
+    .titleTienda {
+        font-size:100px;
+        font-family: "precioType";
+        background-color:#CCCCCC;
+        width: 100%;
     }
     
     .carritoImg {
@@ -23,6 +21,7 @@
     }
 
     .navv h2 a {
+        font-family: "precioType";
         display: inline-block;
         padding:5px 5px;
         border-radius: 10px;
@@ -38,7 +37,6 @@
         border-radius: 10px;
         background: linear-gradient(to top, #1F84B9 0 5%, #E9E9E9 30% 100%);
         padding:5px 10px;
-        
 
     }
 
@@ -63,6 +61,9 @@
         width: 18rem;
     }
 
+    .flecha {
+        color:#212529; 
+    }
 
 
 }
@@ -86,127 +87,119 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
     @media only screen and (max-width: 768px) {
 
         .tienda-celular {
             background-color: #E9E9E9;
             overflow-x: hidden;
-            .title-movispace {
-              background-color: #1F84B9;
-              color: white;
-              text-decoration: none;
-              text-align: center;
-              font-size: 40px;
-              font-family: 'Lora', serif;
-            }
+            width: 100%;
 
-            .carritoImg {
-                width:33px;
-                margin-left: 80%;
-                position: relative;
-                bottom:55px;
-                left:25px;
-            }
+                .carritoImg {
+                    width:33px;
+                    margin-left: 80%;
+                    position: relative;
+                    bottom:55px;
+                    left:25px;
+                }
 
-            .titleModelo {
-                text-align: center;
-            }
-            
-            .menu {
-                display: grid;
-                grid-template-areas: 
-                "samsung motorola xiaomi iphone";
-                grid-template-columns: 105px 105px 105px 105px;
-                background-color: #CCCCCC;
-                border-radius: 50px;
-            }
+                .titleTienda {
+                    font-size:50px;
+                    font-family: "precioType";
+                }
 
-            .menu a {
-                display: inline-block;
-                // background-color:#E9E9E9;
-                transition: all 0.5s;
-                text-decoration: none;
-                color: black;
+                .titleModelo {
+                    text-align: center;
+                }
                 
-            }
+                .menu {
+                    display: grid;
+                    grid-template-areas: 
+                    "samsung motorola xiaomi iphone";
+                    grid-template-columns: 95px 95px 95px 95px;
+                    border-radius: 50px;
+                }
 
-            .menu a:hover {
-                cursor: pointer;
-                box-shadow: 0px 0px 5px 1px #1F84B9;
-                border-radius: 10px;
-                background: linear-gradient(to top, #1F84B9 0 5%, #E9E9E9 30% 100%);
-                padding:5px 10px;
-            }
+                .menu a {
+                    display: inline-block;
+                    // background-color:#E9E9E9;
+                    transition: all 0.5s;
+                    text-decoration: none;
+                    color: black;
+                    font-family: "precioType";
+                    
+                    
+                }
 
-            
+                .navv a {
+                    font-size: 15px;
+                }
 
-            .subir {
-                color: #1F84B9;
-                text-decoration: none;
-                display: inline-block;
-                font-family: "samsung";
-                font-size:18px;
-            }
-            
-            .card-Phone {
-                display: grid;
-                grid-template-areas:
-                "imagen titulo precio";
-                grid-template-columns: 40% 60%;
-                grid-template-rows: 220px;
-                align-items:center;
+                .menu a:hover {
+                    cursor: pointer;
+                    box-shadow: 0px 0px 5px 1px #1F84B9;
+                    border-radius: 10px;
+                    background: linear-gradient(to top, #1F84B9 0 5%, #E9E9E9 30% 100%);
+                    padding:5px 10px;
+                }
 
                 
 
-                width: 100%;
-
-                    .img-phone {
-                        width: 10rem;
-                        height:15rem;
-                    }
-
-                    .TitleModelo {
-                        display:flex;
-                        justify-content:center;
-                        position:absolute;
-                        top: 10px;
-                        font-size: 28px;
-                    }
-
-                    .precio {
-                        margin-top: 20PX;
-                        font-size:35px;
-                        display:flex;
-                        justify-content:start;
-                    }
+                .subir {
+                    color: #1F84B9;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-family: "samsung";
+                    font-size:18px;
+                }
                 
-            }
-            
-            .titleMarca {
-                font-family: "samsung";
-                font-size:50px;
-                margin-bottom:50px; 
-            }
-            
-            
+                .card-Phone {
+                    display: grid;
+                    grid-template-areas:
+                    "imagen titulo precio";
+                    grid-template-columns: 40% 60%;
+                    grid-template-rows: 220px;
+                    align-items:center;
 
+                    
+
+                    width: 100%;
+
+                        .img-phone {
+                            width: 10rem;
+                            height:15rem;
+                        }
+
+                        .TitleModelo {
+                            display:flex;
+                            justify-content:center;
+                            position:absolute;
+                            top: 10px;
+                            font-size: 28px;
+                        }
+
+                        .precio {
+                            margin-top: 20PX;
+                            font-size:35px;
+                            display:flex;
+                            justify-content:start;
+                        }
+                    
+                }
+                
+                .titleMarca {
+                    font-family: "samsung";
+                    font-size:50px;
+                    margin-bottom:50px; 
+                }
             
-        
-            .navv 
-        
-            .card {
-                box-shadow: 0px 0px 10px grey;
-            }
+                .card {
+                    box-shadow: 0px 0px 10px grey;
+                }
+
+                .flecha {
+                    margin:5px;
+                    height:10px;
+                }
             
         }
         
