@@ -553,6 +553,8 @@ li {
     font-family: "precioType";
     background-color: #CCCCCC;
     width: 100%; }
+  .tienda-celular .titleTienda:hover {
+    background: linear-gradient(to top, #1F84B9 0 5%, #E9E9E9 30% 100%); }
   .tienda-celular .carritoImg {
     width: 50px; }
   .tienda-celular .titleMarca {
@@ -570,9 +572,8 @@ li {
     color: black; }
   .tienda-celular .navv h2 a:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 5px 1px #1F84B9;
     border-radius: 10px;
-    background: linear-gradient(to top, #1F84B9 0 5%, #E9E9E9 30% 100%);
+    background: linear-gradient(to top, #1F84B9 0 5%, #E9E9E9 50% 100%);
     padding: 5px 10px; }
   .tienda-celular .subir {
     border-radius: 30px;
