@@ -16,7 +16,7 @@
     }
 
     .bck:hover{
-        padding:0px 15px;
+        padding:0px 0px;
         border-radius: 10px;
         background: linear-gradient(to top, #1F84B9 0 5%, #CCCCCC 60% 100%);
         transition: all 0.5s;
@@ -73,11 +73,25 @@
     }
 
     .flecha {
-        color:#212529; 
+        padding-top: 30px;
+        padding-left: 10px;
+        color:#212529;
+        position: sticky;
+        top: 0;
+    }
+
+    
+}
+
+    .alert {
+        z-index: 9999px;
+    }
+
+    .hide {
+        display: none;
     }
 
 
-}
 
     @font-face {
         font-family: "samsung";
@@ -170,9 +184,6 @@
                     grid-template-columns: 40% 60%;
                     grid-template-rows: 220px;
                     align-items:center;
-
-                    
-
                     width: 100%;
 
                         .img-phone {
@@ -213,6 +224,8 @@
                 }
             
         }
+
+        
         
             @font-face {
                 font-family: "samsung";
@@ -221,6 +234,7 @@
             }
 
 }
+    
 
 
 

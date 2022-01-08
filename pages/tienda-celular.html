@@ -33,16 +33,54 @@
 
     <title>Tienda</title>
 </head>
-
+<div class="alert container position-sticky top-0 alert-success hide" role="alert">
+  ✅Se añadido tu producto al carrito!✅
+</div>
 <body class="tienda-celular">
     <div class="container-fluid p-0">
         <div class="row">
             <div class="col-lg-12 col-xs-12 carrito text-center">
-              <h1 class="titleTienda" id="subirInicio"><a  class="bck" href="../index.html">MoviSpace</a><a href="#" target="_blank" class="fas fa-shopping-cart" style="margin-left: 50%;"></a></h1>
+              <h1 class="titleTienda" id="subirInicio"><a  class="bck" href="../index.html">MoviSpace</a><a id="open-modal"
+                data-bs-toggle="modal" data-bs-target="#modal" class="fas fa-shopping-cart" style="margin-left: 50%;"></a></h1>
+              <div class="modal" id="modal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table table_carrito">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">cantidad</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody class="tbody">
+                         
+                        </tbody>
+                      </table>
+                      <row>
+                        <div>
+                          <h2 id="itemTotal">total: 0 </h2>
+                        </div>
+                      </row>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Comprar</button>
+                      <!-- <button type="button" class="btn btn-success"></button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
         <!-- NAV -->
-          <a href="#subirInicio" class="flecha"><i class="fas fa-arrow-circle-up fa-3x fixed-top"></i></a>
+          
             <!-- <a href="#tiendaVolver" class="to_top fixed-top flecha"></a> -->
         <div class="row text-center mt-5 menu">
             <div class="col-lg-3 col-xs-12 navv">
@@ -65,6 +103,7 @@
             speed="1" style="width: 100%; height: 200px;" loop autoplay></lottie-player>
         <!-- END NAV -->
     </div>
+    <a href="#subirInicio" class="flecha"><i class="fas fa-arrow-circle-up fa-3x"></i></a>
     <div class="container"> 
         <div class="row ">
             <h2 class="text-center titleMarca" id="samsung">SAMSUNG</h2>
@@ -74,9 +113,10 @@
                     <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70008897.jpg" alt="samsung s21" class="img-phone">
                     <div class="card-body">
                       <h5 class="TitleModelo">s21 ULTRA</h5>
-                      <p style="margin-top: 70px;">Envio sin cargo</p>
+                      <p style="margin-top: 10px;">Envio sin cargo</p>
                       <p class="mt-1">6 o 12 c/sin interes</p>
-                      <p class="h4 precio">$108.000</p>
+                      <p class="h4 precio">$120000</p>
+                      <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                     </div>
                   </div>
             </div>
@@ -85,9 +125,10 @@
                     <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009418.jpg" alt="samsung s21" class="img-phone">
                     <div class="card-body">
                       <h5 class="TitleModelo">Z FOLD 3</h5>
-                      <p style="margin-top: 70px;">Envio sin cargo</p>
+                      <p style="margin-top: 10px;">Envio sin cargo</p>
                       <p class="mt-1">6 o 12 c/sin interes</p>
-                      <p class="h4 precio">$</p>
+                      <p class="h4 precio">$130000</p>
+                      <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                     </div>
                   </div>
             </div>
@@ -96,9 +137,10 @@
                 <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70008899.jpg" alt="samsung s21" class="img-phone">
                 <div class="card-body">
                   <h5 class="TitleModelo">s21+</h5>
-                  <p style="margin-top: 70px;">Envio sin cargo</p>
+                  <p style="margin-top: 10px;">Envio sin cargo</p>
                   <p class="mt-1">6 o 12 c/sin interes</p>
-                  <p class="h4 precio">$</p>
+                  <p class="h4 precio">$100000</p>
+                  <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                 </div>
               </div>
             </div>
@@ -111,9 +153,10 @@
                 <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009251.jpg" alt="samsung s21" class="img-phone">
                 <div class="card-body">
                   <h5 class="TitleModelo">Z 3FLIP</h5>
-                  <p style="margin-top: 70px;">Envio sin cargo</p>
+                  <p style="margin-top: 10px;">Envio sin cargo</p>
                   <p class="mt-1">6 o 12 c/sin interes</p>
-                  <p class="h4 precio">$</p>
+                  <p class="h4 precio">$133000</p>
+                  <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                 </div>
               </div>
             </div>
@@ -122,9 +165,10 @@
                 <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009042.jpg" alt="samsung s21" class="img-phone">
                 <div class="card-body">
                   <h5 class="TitleModelo">A72</h5>
-                  <p style="margin-top: 70px;">Envio sin cargo</p>
+                  <p style="margin-top: 10px;">Envio sin cargo</p>
                   <p class="mt-1">6 o 12 c/sin interes</p>
-                  <p class="h4 precio">$</p>
+                  <p class="h4 precio">$60000</p>
+                  <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                 </div>
               </div>
             </div>
@@ -133,9 +177,10 @@
                 <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009050.jpg" alt="samsung s21" class="img-phone">
                 <div class="card-body">
                   <h5 class="TitleModelo">A32</h5>
-                  <p style="margin-top: 70px;">Envio sin cargo</p>
+                  <p style="margin-top: 10px;">Envio sin cargo</p>
                   <p class="mt-1">6 o 12 c/sin interes</p>
-                  <p class="h4 precio">$</p>
+                  <p class="h4 precio">$50000</p>
+                  <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                 </div>
               </div>
             </div>
@@ -148,9 +193,10 @@
                 <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009229.jpg" alt="samsung s21" class="img-phone">
                 <div class="card-body">
                   <h5 class="TitleModelo">A32</h5>
-                  <p style="margin-top: 70px;">Envio sin cargo</p>
+                  <p style="margin-top: 10px;">Envio sin cargo</p>
                   <p class="mt-1">6 o 12 c/sin interes</p>
-                  <p class="h4 precio">$</p>
+                  <p class="h4 precio">$44000</p>
+                  <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                 </div>
               </div>
             </div>
@@ -159,9 +205,10 @@
                 <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/7003693.jpg" alt="samsung s21" class="img-phone">
                 <div class="card-body">
                   <h5 class="TitleModelo">Tab A7</h5>
-                  <p style="margin-top: 70px;">Envio sin cargo</p>
+                  <p style="margin-top: 10px;">Envio sin cargo</p>
                   <p class="mt-1">6 o 12 c/sin interes</p>
-                  <p class="h4 precio">$</p>
+                  <p class="h4 precio">$57999</p>
+                  <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                 </div>
               </div>
             </div>
@@ -170,9 +217,10 @@
                 <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70008379.jpg" alt="samsung s21" class="img-phone">
                 <div class="card-body">
                   <h5 class="TitleModelo">A31</h5>
-                  <p style="margin-top: 70px;">Envio sin cargo</p>
+                  <p style="margin-top: 10px;">Envio sin cargo</p>
                   <p class="mt-1">6 o 12 c/sin interes</p>
-                  <p class="h4 precio">$</p>
+                  <p class="h4 precio">$35999</p>
+                  <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                 </div>
               </div>
             </div>
@@ -191,9 +239,10 @@
                         <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009235.jpg" alt="samsung s21" class="img-phone">
                         <div class="card-body">
                           <h5 class="TitleModelo">EDGE 30 LITE</h5>
-                          <p style="margin-top: 70px;">Envio sin cargo</p>
+                          <p style="margin-top: 10px;">Envio sin cargo</p>
                           <p class="mt-1">6 o 12 c/sin interes</p>
-                          <p class="h4 precio">$</p>
+                          <p class="h4 precio">$77999</p>
+                          <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                         </div>
                       </div>
                     </div>
@@ -202,9 +251,10 @@
                         <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009306.jpg" alt="samsung s21" class="img-phone">
                         <div class="card-body">
                           <h5 class="TitleModelo">Moto E40</h5>
-                          <p style="margin-top: 70px;">Envio sin cargo</p>
+                          <p style="margin-top: 10px;">Envio sin cargo</p>
                           <p class="mt-1">6 o 12 c/sin interes</p>
-                          <p class="h4 precio">$</p>
+                          <p class="h4 precio">$35999</p>
+                          <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                         </div>
                       </div>
                     </div>
@@ -213,9 +263,10 @@
                         <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70008852.jpg" alt="samsung s21" class="img-phone">
                         <div class="card-body">
                           <h5 class="TitleModelo">Moto G9 Plus</h5>
-                          <p style="margin-top: 70px;">Envio sin cargo</p>
+                          <p style="margin-top: 10px;">Envio sin cargo</p>
                           <p class="mt-1">6 o 12 c/sin interes</p>
-                          <p class="h4 precio">$</p>
+                          <p class="h4 precio">$34999</p>
+                          <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                         </div>
                       </div>
                     </div>
@@ -228,9 +279,10 @@
                         <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009058.jpg" alt="samsung s21" class="img-phone">
                         <div class="card-body">
                           <h5 class="TitleModelo">Moto G20</h5>
-                          <p style="margin-top: 70px;">Envio sin cargo</p>
+                          <p style="margin-top: 10px;">Envio sin cargo</p>
                           <p class="mt-1">6 o 12 c/sin interes</p>
-                          <p class="h4 precio">$</p>
+                          <p class="h4 precio">$85999</p>
+                          <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                         </div>
                       </div>
                     </div>
@@ -239,20 +291,22 @@
                         <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/70009056.jpg" alt="samsung s21" class="img-phone">
                         <div class="card-body">
                           <h5 class="TitleModelo">Moto E7i</h5>
-                          <p style="margin-top: 70px;">Envio sin cargo</p>
+                          <p style="margin-top: 10px;">Envio sin cargo</p>
                           <p class="mt-1">6 o 12 c/sin interes</p>
-                          <p class="h4 precio">$</p>
+                          <p class="h4 precio">$71000</p>
+                          <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                         </div>
                       </div>
                     </div>
                     <div class="col-lg-4 col-xs-12 d-flex justify-content-evenly">
                       <div class="card text-center p-2 card-Phone">
-                        <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/7003410.jpg" alt="samsung s21" class="img-phone" style="">
+                        <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/200x310/7003410.jpg" alt="samsung s21" class="img-phone">
                         <div class="card-body">
                           <h5 class="TitleModelo">Moto Escape 220</h5>
-                          <p style="margin-top: 70px;">Envio sin cargo</p>
+                          <p style="margin-top: 10px;">Envio sin cargo</p>
                           <p class="mt-1">6 o 12 c/sin interes</p>
-                          <p class="h4 precio">$</p>
+                          <p class="h4 precio">$14999</p>
+                          <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                         </div>
                       </div>
                     </div>
@@ -268,34 +322,37 @@
                     <h2 class="text-center titleMarca" id="xiaomi">XIAOMI</h2>
                     <div class="col-lg-4 col-xs-12 d-flex justify-content-evenly">
                       <div class="card text-center p-2 card-Phone">
-                        <img src="https://phonesdata.com/files/models/Xiaomi-Mi-11X-Pro-886.jpg" alt="samsung s21" class="img-phone" style="">
+                        <img src="https://phonesdata.com/files/models/Xiaomi-Mi-11X-Pro-886.jpg" alt="samsung s21" class="img-phone">
                         <div class="card-body">
                           <h5 class="TitleModelo">Xiaomi 11X Pro</h5>
-                          <p style="margin-top: 70px;">Envio sin cargo</p>
+                          <p style="margin-top: 10px;">Envio sin cargo</p>
                           <p class="mt-1">6 o 12 c/sin interes</p>
-                          <p class="h4 precio">$</p>
+                          <p class="h4 precio">$99999</p>
+                          <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                         </div>
                       </div>
                     </div>
                     <div class="col-lg-4 col-xs-12 d-flex justify-content-evenly">
                       <div class="card text-center p-2 card-Phone">
-                        <img src="https://phonesdata.com/files/models/Xiaomi-Mi-Mix-Fold-782.jpg" alt="samsung s21" class="img-phone" style="">
+                        <img src="https://phonesdata.com/files/models/Xiaomi-Mi-Mix-Fold-782.jpg" alt="samsung s21" class="img-phone">
                         <div class="card-body">
                           <h5 class="TitleModelo">Xiaomi Mix-Fold</h5>
-                          <p style="margin-top: 70px;">Envio sin cargo</p>
+                          <p style="margin-top: 10px;">Envio sin cargo</p>
                           <p class="mt-1">6 o 12 c/sin interes</p>
-                          <p class="h4 precio">$</p>
+                          <p class="h4 precio">$125999</p>
+                          <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                         </div>
                       </div>
                     </div>
                     <div class="col-lg-4 col-xs-12 d-flex justify-content-evenly">
                       <div class="card text-center p-2 card-Phone">
-                        <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/7003767.jpg" alt="samsung s21" class="img-phone" style="">
+                        <img src="https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/7003767.jpg" alt="samsung s21" class="img-phone">
                         <div class="card-body">
                           <h5 class="TitleModelo">Xiaomi Airdots 2</h5>
-                          <p style="margin-top: 70px;">Envio sin cargo</p>
+                          <p style="margin-top: 10px;">Envio sin cargo</p>
                           <p class="mt-1">6 o 12 c/sin interes</p>
-                          <p class="h4 precio">$</p>
+                          <p class="h4 precio">$3599</p>
+                          <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                         </div>
                       </div>
                     </div>
@@ -311,34 +368,37 @@
                     <h2 class="text-center titleMarca" id="iphone">IPHONE</h2>
                     <div class="col-lg-4 col-xs-12 d-flex justify-content-evenly">
                       <div class="card text-center p-2 card-Phone">
-                        <img src="https://ipoint.com.ar/19664-thickbox_default/awatch-s5-gps-44mm-sacase.jpg" alt="samsung s21" class="img-phone" style="">
+                        <img src="https://ipoint.com.ar/19664-thickbox_default/awatch-s5-gps-44mm-sacase.jpg" alt="samsung s21" class="img-phone" >
                         <div class="card-body">
                           <h5 class="TitleModelo">Watch Series 5</h5>
-                          <p style="margin-top: 70px;">Envio sin cargo</p>
+                          <p style="margin-top: 10px;">Envio sin cargo</p>
                           <p class="mt-1">6 o 12 c/sin interes</p>
-                          <p class="h4 precio">$</p>
+                          <p class="h4 precio">$45999</p>
+                          <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                         </div>
                       </div>
                     </div>
                     <div class="col-lg-4 col-xs-12 d-flex justify-content-evenly">
                       <div class="card text-center p-2 card-Phone">
-                        <img src="https://www.pngall.com/wp-content/uploads/11/iPhone-13-PNG-Pic.png" alt="samsung s21" class="img-phone" style="">
+                        <img src="https://www.pngall.com/wp-content/uploads/11/iPhone-13-PNG-Pic.png" alt="samsung s21" class="img-phone">
                         <div class="card-body">
                           <h5 class="TitleModelo">iPhone 13</h5>
-                          <p style="margin-top: 70px;">Envio sin cargo</p>
+                          <p style="margin-top: 10px;">Envio sin cargo</p>
                           <p class="mt-1">6 o 12 c/sin interes</p>
-                          <p class="h4 precio">$</p>
+                          <p class="h4 precio">$198999</p>
+                          <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                         </div>
                       </div>
                     </div>
                     <div class="col-lg-4 col-xs-12 d-flex justify-content-evenly">
                       <div class="card text-center p-2 card-Phone">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_941671-MLA46545254213_062021-O.webp" alt="samsung s21" class="img-phone" style="">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_941671-MLA46545254213_062021-O.webp" alt="samsung s21" class="img-phone" style="height:30rem">
                         <div class="card-body">
                           <h5 class="TitleModelo">iPhone XR</h5>
-                          <p style="margin-top: 70px;">Envio sin cargo</p>
+                          <p style="margin-top: 10px;">Envio sin cargo</p>
                           <p class="mt-1">6 o 12 c/sin interes</p>
-                          <p class="h4 precio">$</p>
+                          <p class="h4 precio">$159999</p>
+                          <button class="btn btn-outline-dark btn-lg" id="comprar">Comprar</button>
                         </div>
                       </div>
                     </div>
@@ -350,20 +410,17 @@
         <footer class="d-flex justify-content-center footer-movi">
             MoviSpace©
         </footer>
-        
         <!-- finde footer -->
 
-        <script src="../js/wow.js"></script>
-        <script>
-            new WOW().init();
-        </script>
+        <script src="../js/tienda-celular.js"></script>
 
         <!-- BOOTSTRAP -->
+        
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
             crossorigin="anonymous"></script>
-        <script src="../js/tienda-checkout.js"></script>
+        
 
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
