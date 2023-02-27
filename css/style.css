@@ -290,6 +290,85 @@
     animation-timing-function: linear; }
   .body_login .container-footer-login {
     margin-top: 5.5%; }
+  .body_login .login {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large; }
+  .body_login .container-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px; }
+  .body_login .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+    width: 500px;
+    flex-direction: column;
+    gap: 35px;
+    background: #e3e3e3;
+    box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe;
+    border-radius: 8px; }
+  .body_login .inputBox {
+    position: relative;
+    width: 250px; }
+  .body_login .inputBox input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px; }
+  .body_login .inputBox span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px; }
+  .body_login .inputBox input:valid ~ span,
+  .body_login .inputBox input:focus ~ span {
+    transform: translateX(113px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px; }
+  .body_login .inputBox input:valid,
+  .body_login .inputBox input:focus {
+    border: 2px solid #000;
+    border-radius: 8px; }
+  .body_login .enter {
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 1em; }
+  .body_login .enter:hover {
+    background-color: black;
+    color: white; }
 
 /* mobile iniciar sesion */
 @media only screen and (max-width: 768px) {
@@ -358,7 +437,83 @@
       margin: 40px 0px;
       display: inline-block;
       padding: 0px 5px;
-      border-radius: 50px; } }
+      border-radius: 50px; }
+    .body_login .login {
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: block;
+      font-weight: bold;
+      font-size: x-large; }
+    .body_login .card {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 350px;
+      width: 300px;
+      flex-direction: column;
+      gap: 35px;
+      background: #e3e3e3;
+      box-shadow: 16px 16px 32px #CEFFFF, -16px -16px 32px #CEFFFF;
+      border-radius: 8px; }
+    .body_login .inputBox {
+      position: relative;
+      width: 250px; }
+    .body_login .inputBox input {
+      width: 100%;
+      padding: 10px;
+      outline: none;
+      border: none;
+      color: #000;
+      font-size: 1em;
+      background: transparent;
+      border-left: 2px solid #000;
+      border-bottom: 2px solid #000;
+      transition: 0.1s;
+      border-bottom-left-radius: 8px; }
+    .body_login .inputBox span {
+      margin-top: 5px;
+      position: absolute;
+      left: 0;
+      transform: translateY(-4px);
+      margin-left: 10px;
+      padding: 10px;
+      pointer-events: none;
+      font-size: 12px;
+      color: #000;
+      text-transform: uppercase;
+      transition: 0.5s;
+      letter-spacing: 3px;
+      border-radius: 8px; }
+    .body_login .inputBox input:valid ~ span,
+    .body_login .inputBox input:focus ~ span {
+      transform: translateX(113px) translateY(-15px);
+      font-size: 0.8em;
+      padding: 5px 10px;
+      background: #000;
+      letter-spacing: 0.2em;
+      color: #fff;
+      border: 2px; }
+    .body_login .inputBox input:valid,
+    .body_login .inputBox input:focus {
+      border: 2px solid #000;
+      border-radius: 8px; }
+    .body_login .enter {
+      height: 45px;
+      width: 100px;
+      border-radius: 5px;
+      border: 2px solid #000;
+      cursor: pointer;
+      background-color: transparent;
+      transition: 0.5s;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-bottom: 1em; }
+    .body_login .enter:hover {
+      background-color: black;
+      color: white; } }
 
 /* fin mobile iniciar sesion */
 .bck-tienda {
@@ -552,21 +707,17 @@ li {
     font-size: 18px; } }
 
 .tienda-celular {
+  background-image: radial-gradient(circle at 13% 47%, rgba(72, 255, 255, 0.27) 0%, rgba(72, 255, 255, 0.27) 25%, transparent 25%, transparent 100%), radial-gradient(circle at 28% 63%, rgba(235, 9, 9, 0.09) 0%, rgba(235, 9, 9, 0.09) 16%, transparent 16%, transparent 100%), radial-gradient(circle at 81% 56%, rgba(243, 19, 243, 0.17) 0%, rgba(243, 19, 243, 0.17) 12%, transparent 12%, transparent 100%), radial-gradient(circle at 26% 48%, rgba(190, 192, 38, 0.42) 0%, rgba(190, 192, 38, 0.42) 6%, transparent 6%, transparent 100%), radial-gradient(circle at 97% 17%, rgba(72, 255, 255, 0.270588) 0%, rgba(72, 255, 255, 0.270588) 56%, transparent 56%, transparent 100%), radial-gradient(circle at 50% 100%, rgba(83, 154, 194, 0.16) 0%, rgba(83, 154, 194, 0.16) 36%, transparent 36%, transparent 100%), radial-gradient(circle at 55% 52%, rgba(69, 69, 69, 0.03) 0%, rgba(69, 69, 69, 0.03) 6%, transparent 6%, transparent 100%), linear-gradient(90deg, white, white);
   background-color: #E9E9E9;
   overflow-x: hidden; }
   .tienda-celular .titleTienda {
     font-size: 100px;
     font-family: "precioType";
-    background-color: #CCCCCC;
     width: 100%; }
   .tienda-celular .bck {
+    padding-right: 200px;
     color: #212529;
     text-decoration: none; }
-  .tienda-celular .bck:hover {
-    padding: 0px 0px;
-    border-radius: 10px;
-    background: linear-gradient(to top, #1F84B9 0 5%, #CCCCCC 60% 100%);
-    transition: all 0.5s; }
   .tienda-celular .carritoImg {
     width: 50px; }
   .tienda-celular .titleMarca {
@@ -578,14 +729,13 @@ li {
     display: inline-block;
     padding: 5px 5px;
     border-radius: 10px;
-    background-color: #CCCCCC;
     transition: all 0.5s;
     text-decoration: none;
     color: black; }
   .tienda-celular .navv h2 a:hover {
     cursor: pointer;
     border-radius: 10px;
-    background: linear-gradient(to top, #1F84B9 0 5%, #E9E9E9 50% 100%);
+    background: linear-gradient(to top, #1F84B9 0 5%);
     padding: 5px 10px; }
   .tienda-celular .subir {
     border-radius: 30px;
@@ -632,12 +782,17 @@ li {
       position: relative;
       bottom: 55px;
       left: 25px; }
+    .tienda-celular .bck {
+      padding-right: 25px;
+      color: #212529;
+      text-decoration: none; }
     .tienda-celular .titleTienda {
       font-size: 50px;
       font-family: "precioType"; }
     .tienda-celular .titleModelo {
       text-align: center; }
     .tienda-celular .menu {
+      padding-left: 15px;
       display: grid;
       grid-template-areas: "samsung motorola xiaomi iphone";
       grid-template-columns: 95px 95px 95px 95px;
@@ -677,10 +832,10 @@ li {
         justify-content: center;
         position: absolute;
         top: 10px;
-        font-size: 28px; }
+        font-size: 19px; }
       .tienda-celular .card-Phone .precio {
         margin-top: 20PX;
-        font-size: 35px;
+        font-size: 25px;
         display: flex;
         justify-content: start; }
     .tienda-celular .titleMarca {
